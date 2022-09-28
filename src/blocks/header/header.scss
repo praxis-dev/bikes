@@ -1,0 +1,16 @@
+@use "../mixins/mixins.scss" as *;
+
+.header {
+  @include flexRow;
+  justify-content: end;
+  align-items: center;
+  padding: 28px 8.2% 28px;
+  border: 1px solid #000;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 25px 0 30px;
+    max-width: 302px;
+  }
+}

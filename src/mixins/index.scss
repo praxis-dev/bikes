@@ -1,0 +1,93 @@
+@mixin sectionTitle {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
+@mixin sectionText {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+  text-align: left;
+}
+
+@mixin interSemi {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin interMedium {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin interNormal {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin mobileSectionTitle {
+  @media screen and (max-width: 1023px) {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: #151515;
+  }
+}
+
+@mixin mobileSectionText {
+  @media screen and (max-width: 1023px) {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #222222;
+    opacity: 0.7;
+    max-width: 284px;
+  }
+}
+
+@mixin mobileToColumn {
+  @media screen and (max-width: 620px) {
+    @include flexColumn;
+    padding: 40px 18px 40px;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@mixin hiddenForMobile {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+}
+
+@mixin hiddenForDesktop {
+  @media screen and (min-width: 620px) {
+    display: none;
+  }
+}
