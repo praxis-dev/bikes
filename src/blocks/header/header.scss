@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 320px) {
   .header {
-    padding: 25px 0 30px;
-    max-width: 302px;
+    padding: 25px 10px 30px;
+    min-width: 320px;
   }
 }

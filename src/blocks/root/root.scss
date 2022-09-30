@@ -1,0 +1,14 @@
+@use "mixins" as *;
+
+.root {
+  @include centerWithMargin;
+  @include testWithBorder;
+  max-width: 1440px;
+  background: #f4f4f4;
+}
+
+@media screen and (max-width: 320px) {
+  .root {
+    min-width: 320px;
+  }
+}

@@ -1,6 +1,10 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts.css";
 
+// root
+
+@import "../blocks/root/root.scss";
+
 // header
 
 @import "../blocks/header/header";
@@ -14,7 +18,10 @@
 @import "../blocks/primary/__text/primary__text.scss";
 @import "../blocks/primary/__details-button/primary__details-button.scss";
 @import "../blocks/primary/__bike-name/primary__bike-name.scss";
+@import "../blocks/primary/__line/primary__line.scss";
 @import "../blocks/primary/__illustration-container/primary__illustration-container.scss";
+@import "../blocks/primary/__illustration/primary__illustration.scss";
 @import "../blocks/primary/__bike-picture/primary__bike-picture.scss";
 @import "../blocks/primary/__bike-picture-container/primary__bike-picture-container.scss";
 @import "../blocks/primary/__text-container/primary__text-container.scss";
+@import "../blocks/primary/__bike-name-and-line-container/primary__bike-name-and-line-container.scss";

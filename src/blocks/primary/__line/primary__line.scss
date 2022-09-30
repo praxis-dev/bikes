@@ -1,0 +1,5 @@
+@use "mixins" as *;
+
+.primary__line {
+  @include hiddenForMobile;
+}

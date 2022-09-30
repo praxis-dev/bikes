@@ -1,7 +1,9 @@
 @import "mixins";
 
 .primary {
+  @include testWithBorder;
   max-width: 1440px;
+  min-width: 320px;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: minmax(320px, 630px) minmax(284px, 810px);
@@ -10,7 +12,8 @@
   border: 1px solid red;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 710px) {
   .primary {
+    grid-template-columns: minmax(284px, 810px);
   }
 }

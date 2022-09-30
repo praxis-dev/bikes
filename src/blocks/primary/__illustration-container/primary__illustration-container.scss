@@ -2,9 +2,10 @@
 
 .primary__illustration-container {
   @include flexRow;
+  @include testWithBorder;
+  aspect-ratio: auto;
   box-sizing: border-box;
   justify-content: end;
   position: relative;
   margin-top: 20px;
-  border: 1px solid red;
 }

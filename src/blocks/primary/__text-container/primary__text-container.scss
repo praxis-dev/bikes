@@ -3,6 +3,7 @@
 .primary__text-container {
   @include flexColumn;
   padding-top: 80px;
+  justify-content: start;
 }
 
 @media screen and (max-width: 1023px) {
