@@ -1,0 +1,9 @@
+@use "mixins" as *;
+
+.primary__bike-name {
+  @include interNormal;
+  @include hiddenForMobile;
+  font-size: 18px;
+  line-height: 18px;
+  color: #151515;
+}

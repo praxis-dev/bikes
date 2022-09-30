@@ -6,3 +6,15 @@
 @import "../blocks/header/header";
 @import "../blocks/header/__menu-icon/header__menu-icon";
 @import "../blocks/header/___link/header__link";
+
+//primary
+
+@import "../blocks/primary/primary.scss";
+@import "../blocks/primary/__title/primary__title.scss";
+@import "../blocks/primary/__text/primary__text.scss";
+@import "../blocks/primary/__details-button/primary__details-button.scss";
+@import "../blocks/primary/__bike-name/primary__bike-name.scss";
+@import "../blocks/primary/__illustration-container/primary__illustration-container.scss";
+@import "../blocks/primary/__bike-picture/primary__bike-picture.scss";
+@import "../blocks/primary/__bike-picture-container/primary__bike-picture-container.scss";
+@import "../blocks/primary/__text-container/primary__text-container.scss";

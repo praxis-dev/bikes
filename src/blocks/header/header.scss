@@ -2,10 +2,13 @@
 
 .header {
   @include mixins.flexRow;
+  box-sizing: border-box;
+  max-width: 1440px;
   justify-content: end;
   align-items: center;
   padding: 28px 8.2% 28px;
-  border: 1px solid #000;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 @media screen and (max-width: 320px) {

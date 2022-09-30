@@ -1,0 +1,14 @@
+@use "mixins" as *;
+
+.primary__text {
+  @include sectionText;
+  @include mobileSectionText;
+  max-width: 460px;
+  margin-bottom: 40px;
+  border: 1px solid #000;
+}
+
+@media screen and (max-width: 320px) {
+  .primary__text {
+  }
+} ;

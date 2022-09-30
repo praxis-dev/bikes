@@ -1,0 +1,24 @@
+@use "mixins" as *;
+
+.primary__details-button {
+  @include interSemi;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 50px;
+  background-color: rgba(36, 180, 126, 1);
+  border-radius: 4px;
+  color: #ffffff;
+  margin-bottom: 152px;
+  padding: 0;
+  border: none;
+}
+
+@media screen and (max-width: 1439px) {
+  .primary__details-button {
+    width: 284px;
+    height: 46px;
+    font-size: 13px;
+  }
+}

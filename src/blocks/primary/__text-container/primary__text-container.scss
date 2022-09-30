@@ -1,0 +1,15 @@
+@use "mixins" as *;
+
+.primary__text-container {
+  @include flexColumn;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 1023px) {
+  .primary__text-container {
+  }
+}
+@media screen and (max-width: 620px) {
+  .primary__text-container {
+  }
+}
