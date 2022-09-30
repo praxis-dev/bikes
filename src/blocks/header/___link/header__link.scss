@@ -1,18 +1,13 @@
-@mixin interMedium {
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
+@use "mixins";
 
 .header__link {
-  @include interMedium;
+  @include mixins.interMedium;
   font-size: 14px;
   line-height: 18px;
   text-align: right;
   color: #151515;
   margin-left: 34px;
   cursor: pointer;
-  border: 1px solid #000;
 }
 
 .header__link:first-child {
