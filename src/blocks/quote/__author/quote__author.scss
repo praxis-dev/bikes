@@ -1,0 +1,17 @@
+@use "mixins" as *;
+
+.quote__author {
+  @include interMedium;
+  font-size: 20px;
+  line-height: 32px;
+  color: #151515;
+  margin: 0 0 7px;
+}
+
+@media screen and (max-width: 1439px) {
+  .quote__author {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 4px;
+  }
+}

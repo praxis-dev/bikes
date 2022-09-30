@@ -1,0 +1,6 @@
+@use "mixins" as *;
+
+.quote__mobile-line {
+  margin-bottom: 20px;
+  @include hiddenForDesktop;
+}

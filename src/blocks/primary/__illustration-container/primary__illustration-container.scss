@@ -2,6 +2,7 @@
 
 .primary__illustration-container {
   @include flexRow;
+  max-width: 610px;
   aspect-ratio: auto;
   box-sizing: border-box;
   justify-content: end;

@@ -1,3 +1,10 @@
+@mixin gridSection {
+  max-width: 1440px;
+  min-width: 320px;
+  box-sizing: border-box;
+  display: grid;
+}
+
 @mixin testWithBorder {
   border: 1px solid red;
 }

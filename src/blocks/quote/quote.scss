@@ -1,0 +1,7 @@
+@use "mixins" as *;
+
+.quote {
+  @include gridSection;
+  grid-template-columns: minmax(284px, 650px) minmax(284px, 470px);
+  padding-left: 8.3%;
+}

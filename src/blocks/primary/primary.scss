@@ -1,13 +1,11 @@
 @import "mixins";
 
 .primary {
-  max-width: 1440px;
-  min-width: 320px;
-  box-sizing: border-box;
-  display: grid;
+  @include gridSection;
   grid-template-columns: minmax(320px, 630px) minmax(284px, 810px);
   margin: 0 auto;
   padding-left: 8.3%;
+  @include testWithBorder;
 }
 
 @media screen and (max-width: 710px) {
