@@ -1,6 +1,6 @@
 import "./styles.scss";
 
-let breakPoint = window.matchMedia("(max-width: 693px)");
+let breakPoint = window.matchMedia("(max-width: 710px)");
 const primarySection = document.querySelector(".primary");
 const primaryTitle = document.querySelector(".primary__title");
 const primaryTextContainer = document.querySelector(".primary__text-container");

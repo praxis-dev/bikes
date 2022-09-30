@@ -11,7 +11,6 @@
 
 @media screen and (max-width: 1254px) {
   .primary__bike-picture-container {
-    padding: 0 37px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,9 +25,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 160px;
-    width: 160px;
-    left: -30px;
+    box-sizing: border-box;
+    height: 164px;
+    width: 235px;
+    left: -10px;
     top: 151px;
+    padding: 10px 23px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .primary__bike-picture-container {
+    left: -30px;
   }
 }

@@ -2,10 +2,17 @@
 
 .primary__illustration-container {
   @include flexRow;
-  @include testWithBorder;
   aspect-ratio: auto;
   box-sizing: border-box;
   justify-content: end;
   position: relative;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  .primary__illustration-container {
+    max-width: 254px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
