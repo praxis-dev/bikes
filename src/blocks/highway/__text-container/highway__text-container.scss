@@ -1,0 +1,6 @@
+@use "mixins";
+
+.highway__text-container {
+  @include testWithBorder;
+  grid-column: 1/3;
+}

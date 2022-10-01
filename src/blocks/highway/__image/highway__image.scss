@@ -1,0 +1,9 @@
+.highway__image {
+  width: 100%;
+}
+@media screen and (max-width: 320px) {
+  .highway__image {
+    width: 284px;
+    height: 175px;
+  }
+}

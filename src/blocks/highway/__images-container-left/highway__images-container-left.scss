@@ -1,0 +1,5 @@
+@use "mixins";
+
+.highway__images-container-left {
+  @include testWithBorder;
+}

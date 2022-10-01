@@ -1,0 +1,6 @@
+@use "mixins" as *;
+
+.highway__mobile-line {
+  @include hiddenForDesktop;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,14 @@
+@use "mixins" as *;
+
+.highway__title {
+  @include sectionTitle;
+  text-align: left;
+  margin: 0 0 42px;
+}
+
+@media screen and (max-width: 1439px) {
+  .highway__title {
+    @include mobileSectionTitle;
+    margin: 20px 0 20px;
+  }
+}
