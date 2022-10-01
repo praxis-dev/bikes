@@ -1,4 +1,11 @@
 .quote__image-container {
+  width: 100%;
   margin-bottom: 38px;
   margin-right: 6%;
+}
+
+@media screen and (max-width: 320px) {
+  .quote__image-container {
+    margin-bottom: 33px;
+  }
 }

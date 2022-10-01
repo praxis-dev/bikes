@@ -2,12 +2,13 @@
 
 .quote__text {
   @include interSemi;
-  @include testWithBorder;
+
   font-size: 34px;
   line-height: 44px;
   letter-spacing: -0.5px;
   color: #151515;
   max-width: 470px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -16,7 +17,7 @@
     line-height: 29px;
     letter-spacing: -0.5px;
     color: #151515;
-    margin: 0 0 40px;
     max-width: 284px;
+    margin-bottom: 40px;
   }
 }
