@@ -4,8 +4,17 @@
   @include testWithBorder;
   @include gridSection;
   grid-template-columns: repeat(2, minmax(284px, 650px));
-  padding: 4% 0 0 8.3%;
+  padding: 4% 0 8% 8.3%;
   justify-content: space-between;
-  column-gap: 3%;
+  column-gap: 2%;
+  row-gap: 5%;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 710px) {
+  .highway {
+    grid-template-columns: minmax(284px, 810px);
+    padding: 15% 4.3%;
+    column-gap: 0;
+  }
 }

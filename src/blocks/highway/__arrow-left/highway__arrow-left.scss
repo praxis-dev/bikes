@@ -1,0 +1,10 @@
+@media screen and (min-width: 710px) {
+  .highway__arrow-left {
+    display: block;
+  }
+}
+@media screen and (max-width: 710px) {
+  .highway__arrow-left {
+    display: none;
+  }
+} ;

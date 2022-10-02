@@ -2,4 +2,11 @@
 
 .highway__images-container-left {
   @include testWithBorder;
+  position: relative;
+}
+
+@media screen and (max-width: 710px) {
+  .highway__images-container-left {
+    width: 100%;
+  }
 }
