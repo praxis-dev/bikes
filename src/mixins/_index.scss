@@ -97,7 +97,7 @@
 }
 
 @mixin hiddenForMobile {
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 710px) {
     display: none;
   }
 }

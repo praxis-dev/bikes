@@ -3,7 +3,7 @@
 .highway__title {
   @include sectionTitle;
   text-align: left;
-  margin: 0 0 42px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1439px) {

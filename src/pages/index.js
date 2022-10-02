@@ -12,7 +12,6 @@ const primaryIllustrationContainer = document.querySelector(
 
 function mobileTitleReposition() {
   if (breakPoint.matches) {
-    console.log("reposition");
     primaryTitle.after(primaryIllustrationContainer);
   } else {
     primaryTextContainer.after(primaryIllustrationContainer);
@@ -26,7 +25,6 @@ breakPoint.addEventListener("change", () => mobileTitleReposition());
 // hideHighwayPicForMobile
 
 const highwayIllustrations = document.querySelectorAll(".highway__image");
-console.log(highwayIllustrations);
 
 function hideHighwayPicForMobile() {
   if (breakPoint.matches) {
@@ -47,7 +45,6 @@ const highwayTitle = document.querySelector(".highway__title");
 const highwayPicSelector = document.querySelector(
   ".highway__slider-buttons-container"
 );
-console.log(highwayPicSelector);
 const mobileTitleAndSelectorWrapper = document.createElement("div");
 const highwayMobileLine = document.querySelector(".highway__mobile-line");
 const highwayArrowLeftContainer = document.querySelector(
@@ -70,7 +67,7 @@ function repositionHighwaySelectorForMobile() {
     mobileTitleAndSelectorWrapper.style.flexDirection = "row";
     mobileTitleAndSelectorWrapper.style.justifyContent = "space-between";
     mobileTitleAndSelectorWrapper.style.alignItems = "center";
-    mobileTitleAndSelectorWrapper.style.marginBottom = "22px";
+    mobileTitleAndSelectorWrapper.style.marginBottom = "5px";
 
     highwayArrowLeftContainer.style.width = "24px";
     highwayArrowLeftContainer.style.height = "24px";
@@ -95,3 +92,27 @@ repositionHighwaySelectorForMobile();
 breakPoint.addEventListener("change", () =>
   repositionHighwaySelectorForMobile()
 );
+
+//highwaySwapForMobile
+
+const highwayImagesLeftContainer = document.querySelector(
+  ".highway__images-container-left"
+);
+const highwayTextContainer = document.querySelector(".highway__text-container");
+
+function highwaySwapForMobile() {
+  if (breakPoint.matches) {
+    highwayImagesLeftContainer.parentNode.insertBefore(
+      highwayImagesLeftContainer,
+      highwayTextContainer
+    );
+  } else {
+    highwayTextContainer.parentNode.insertBefore(
+      highwayTextContainer,
+      highwayImagesLeftContainer
+    );
+  }
+}
+highwaySwapForMobile();
+
+breakPoint.addEventListener("change", () => highwaySwapForMobile());
