@@ -1,0 +1,27 @@
+@use "mixins" as *;
+
+.bikes__types-link {
+  @include interNormal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: #222222;
+  opacity: 0.7s;
+  margin-left: 38px;
+}
+
+.bikes__types-link:link {
+  text-decoration: none;
+}
+.bikes__types-link:visited {
+  text-decoration: none;
+  font-weight: 600;
+}
+.bikes__types-link:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+.bikes__types-link:active {
+  text-decoration: none;
+  font-weight: 600;
+}

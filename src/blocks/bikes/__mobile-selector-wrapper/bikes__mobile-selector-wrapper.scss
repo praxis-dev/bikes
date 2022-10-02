@@ -1,0 +1,17 @@
+.bikes__mobile-selector-wrapper {
+  display: inline-flex;
+  position: relative;
+  margin-bottom: 18px;
+}
+.bikes__mobile-selector-wrapper::after {
+  content: url(/src/vendor/images/mobile-selector-arrow.svg);
+  font-size: 1rem;
+  top: 6px;
+  right: 10px;
+  position: absolute;
+}
+@media screen and (min-width: 710px) {
+  .bikes__mobile-selector-wrapper {
+    display: none;
+  }
+}

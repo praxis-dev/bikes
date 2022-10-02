@@ -1,7 +1,6 @@
 @use "mixins" as *;
 
 .highway {
-  @include testWithBorder;
   @include gridSection;
   grid-template-columns: repeat(2, minmax(284px, 650px));
   padding: 4% 0 8% 8.3%;

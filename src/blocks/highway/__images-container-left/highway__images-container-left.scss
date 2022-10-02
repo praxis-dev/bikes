@@ -1,7 +1,6 @@
 @use "mixins";
 
 .highway__images-container-left {
-  @include testWithBorder;
   position: relative;
   margin-bottom: 15px;
 }
@@ -9,6 +8,6 @@
 @media screen and (max-width: 710px) {
   .highway__images-container-left {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }

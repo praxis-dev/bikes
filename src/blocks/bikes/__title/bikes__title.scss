@@ -1,0 +1,12 @@
+@use "mixins" as *;
+
+.bikes__title {
+  @include sectionTitle;
+}
+
+@media screen and (max-width: 1439px) {
+  .bikes__title {
+    @include mobileSectionTitle;
+    margin: 22px 0 0;
+  }
+}

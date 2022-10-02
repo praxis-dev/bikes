@@ -116,3 +116,20 @@ function highwaySwapForMobile() {
 highwaySwapForMobile();
 
 breakPoint.addEventListener("change", () => highwaySwapForMobile());
+
+// hideBikesCardsForMobile;
+
+const bikesCards = document.querySelectorAll(".bikes__card");
+
+function hideBikesCardsForMobile() {
+  if (breakPoint.matches) {
+    bikesCards[1].style.display = "none";
+    bikesCards[2].style.display = "none";
+  } else {
+    bikesCards[1].style.display = "block";
+    bikesCards[2].style.display = "block";
+  }
+}
+hideBikesCardsForMobile();
+
+breakPoint.addEventListener("change", () => hideBikesCardsForMobile());

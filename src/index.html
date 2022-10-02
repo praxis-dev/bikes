@@ -178,6 +178,81 @@
           </button>
         </div>
       </section>
+
+      <!-- bikes -->
+
+      <section class="bikes">
+        <svg
+          class="highway__mobile-line"
+          width="284"
+          height="1"
+          viewBox="0 0 284 1"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+        </svg>
+        <div class="bikes__title-and-selector">
+          <h2 class="bikes__title">Велосипеды</h2>
+          <nav class="bikes__types-selector">
+            <ul class="bikes__types-list">
+              <li class="bikes__types-list-bullet">
+                <a href="#" class="bikes__types-link">Шоссе</a>
+              </li>
+              <li class="bikes__types-list-bullet">
+                <a href="#" class="bikes__types-link">Грэвел</a>
+              </li>
+              <li class="bikes__types-list-bullet">
+                <a href="#" class="bikes__types-link">ТТ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="bikes__mobile-selector-wrapper">
+          <label for="bikes__mobile-selector"></label
+          ><select
+            class="bikes__mobile-selector"
+            name="bikes__mobile-selector"
+            id="bikes__mobile-selector"
+          >
+            <option value="highway">Шоссе</option>
+            <option value="TT">ТТ</option>
+            <option value="Gravel">Грэвэл</option>
+          </select>
+        </div>
+
+        <article class="bikes__card">
+          <img
+            src="<%=require('./vendor/images/Cervelo-Caledonia.jpg')%>"
+            alt="Cervelo-Caledonia"
+            class="bikes__image"
+          />
+          <p class="bikes__name">Cervelo Caledonia-5</p>
+        </article>
+        <article class="bikes__card">
+          <img
+            src="<%=require('./vendor/images/Cannondale-Systemix-Himod.jpg')%>"
+            alt="Cannondale Systemix Himod"
+            class="bikes__image"
+          />
+          <p class="bikes__name">Cannondale Systemsix Himod</p>
+        </article>
+        <article class="bikes__card">
+          <img
+            src="<%=require('./vendor/images/Trek-Domane SL-7.jpg')%>"
+            alt="Trek Domane"
+            class="bikes__image"
+          />
+          <p class="bikes__name">Trek Domane SL-7</p>
+        </article>
+
+        <div class="three-dots-menu">
+          <div class="three-dots-menu__dot three-dots-menu__dot_active"></div>
+          <div class="three-dots-menu__dot"></div>
+          <div class="three-dots-menu__dot"></div>
+        </div>
+      </section>
     </main>
 
     <!-- <h1 class="test">test1test</h1>
