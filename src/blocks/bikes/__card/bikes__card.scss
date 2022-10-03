@@ -4,7 +4,6 @@
   .bikes__card {
     @include flexColumn;
     width: 100%;
-    border: 1px solid #000;
   }
 }
 
@@ -13,6 +12,6 @@
     background: #f4f4f4;
     box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 28px;
   }
 }
