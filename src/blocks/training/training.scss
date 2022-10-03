@@ -2,7 +2,6 @@
 
 .training {
   @include gridSection;
-  @include testWithBorder;
   grid-template-columns: minmax(284px, 460px) minmax(284px, 580px);
   column-gap: 13.3%;
   padding: 9.4% 8% 8.3%;
@@ -10,8 +9,7 @@
 
 @media screen and (max-width: 710px) {
   .training {
-    padding: 25% 4.3%;
-    border: 1px solid gold;
+    padding: 21% 4.3%;
     grid-template-columns: minmax(284px, 100%);
     justify-content: center;
   }

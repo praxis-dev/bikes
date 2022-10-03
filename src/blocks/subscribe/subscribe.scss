@@ -1,0 +1,11 @@
+.subscribe {
+  max-width: 1440px;
+  padding: 55px 0 20px 8.3%;
+  background: #efefef;
+}
+
+@media screen and (max-width: 710px) {
+  .subscribe {
+    padding: 7% 4.3%;
+  }
+}

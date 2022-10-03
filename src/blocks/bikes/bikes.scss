@@ -19,7 +19,6 @@
 @media screen and (max-width: 940px) {
   .bikes {
     padding: 14% 8.3%;
-    border: 1px solid gold;
     grid-template-columns: minmax(284px, 100%);
     column-gap: 0;
     justify-content: center;
@@ -29,7 +28,6 @@
 @media screen and (max-width: 710px) {
   .bikes {
     padding: 14% 4.3%;
-    border: 1px solid gold;
     grid-template-columns: minmax(284px, 100%);
     column-gap: 0;
     justify-content: center;

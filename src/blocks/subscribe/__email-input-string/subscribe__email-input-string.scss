@@ -1,0 +1,23 @@
+@use "mixins" as *;
+
+.subscribe__email-input-string {
+  @include interMedium;
+  font-size: 13px;
+  line-height: 28px;
+  color: #151515;
+  opacity: 0.7;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  padding: 11px 270px 11px 20px;
+  cursor: pointer;
+}
+
+.subscribe__email-input-string::placeholder:hover {
+  color: red;
+}
+
+@media screen and (max-width: 1439px) {
+  .subscribe__email-input-string {
+    padding: 11px 82px 11px 20px;
+  }
+}
