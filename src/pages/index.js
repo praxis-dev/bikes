@@ -1,6 +1,7 @@
 import "./styles.scss";
 
 let breakPoint = window.matchMedia("(max-width: 710px)");
+let breakPointForBikes = window.matchMedia("(max-width: 940px)");
 
 // primaryTitleReposition
 
@@ -122,7 +123,7 @@ breakPoint.addEventListener("change", () => highwaySwapForMobile());
 const bikesCards = document.querySelectorAll(".bikes__card");
 
 function hideBikesCardsForMobile() {
-  if (breakPoint.matches) {
+  if (breakPointForBikes.matches) {
     bikesCards[1].style.display = "none";
     bikesCards[2].style.display = "none";
   } else {
@@ -132,4 +133,4 @@ function hideBikesCardsForMobile() {
 }
 hideBikesCardsForMobile();
 
-breakPoint.addEventListener("change", () => hideBikesCardsForMobile());
+breakPointForBikes.addEventListener("change", () => hideBikesCardsForMobile());

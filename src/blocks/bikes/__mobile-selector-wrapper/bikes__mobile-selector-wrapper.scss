@@ -2,6 +2,7 @@
   display: inline-flex;
   position: relative;
   margin-bottom: 18px;
+  width: max-content;
 }
 .bikes__mobile-selector-wrapper::after {
   content: url(/src/vendor/images/mobile-selector-arrow.svg);
@@ -10,7 +11,7 @@
   right: 10px;
   position: absolute;
 }
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 940px) {
   .bikes__mobile-selector-wrapper {
     display: none;
   }

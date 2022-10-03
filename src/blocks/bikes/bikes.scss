@@ -13,12 +13,13 @@
   .bikes {
     grid-template-columns: repeat(2, minmax(284px, 380px));
     justify-content: space-between;
+    row-gap: 1.8%;
   }
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 940px) {
   .bikes {
-    grid-template-columns: minmax(284px, 380px);
+    grid-template-columns: minmax(284px, 600px);
     column-gap: 0;
     justify-content: center;
   }

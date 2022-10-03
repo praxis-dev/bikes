@@ -1,8 +1,15 @@
 .bikes__image {
+  box-sizing: border-box;
   padding: 20px;
   background: #f4f4f4;
   border-radius: 20px;
   box-shadow: -20px 60px 80px 0px rgba(0, 0, 0, 0.04);
-  width: 100%;
-  object-fit: contain;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 940px) {
+  .bikes__image {
+    width: 100%;
+    border: 1px solid #000;
+  }
 }

@@ -1,0 +1,15 @@
+@use "mixins" as *;
+
+.three-dots-menu {
+  @include flexRow;
+  width: 24px;
+  max-height: 5px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 941px) {
+  .three-dots-menu {
+    display: none;
+  }
+}
