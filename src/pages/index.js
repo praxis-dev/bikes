@@ -156,3 +156,62 @@ function trainingMobileReposition() {
 trainingMobileReposition();
 
 breakPoint.addEventListener("change", () => trainingMobileReposition());
+
+//themeChanger
+
+const toggle = document.querySelector(".toggle");
+const allElements = document.getElementsByTagName("*");
+const highwayArrowLeft = document.querySelector(".highway__arrow-left");
+const highwayArrowRight = document.querySelector(".highway__arrow-right");
+const primaryBikePicContainer = document.querySelector(
+  ".primary__bike-picture-container"
+);
+console.log(primaryBikePicContainer);
+const bikesImage = document.querySelectorAll(".bikes__image");
+const highwayRectangle = document.querySelector(".highway__rectangle");
+const terrainType = document.querySelector(".highway__terrain-type");
+const sunIcon = document.querySelector(".toggle__sun-icon");
+const moonIcon = document.querySelector(".toggle__moon-icon");
+const primaryDetailsButton = document.querySelector(".primary__details-button");
+const toggleFill = document.querySelector(".toggle__fill");
+let theme = "light";
+
+function applyDarkTheme() {
+  for (let i = 0; i < allElements.length; i++) {
+    allElements[i].style.backgroundColor = "rgba(51, 51, 51, 1)";
+    allElements[i].style.color = "rgba(255, 255, 255, 1)";
+  }
+  highwayArrowLeftContainer.style.backgroundColor = "rgba(67, 67, 67, 1)";
+  highwayArrowLeft.style.backgroundColor = "rgba(67, 67, 67, 1)";
+  highwayArrowRightContainer.style.backgroundColor = "rgba(67, 67, 67, 1)";
+  highwayArrowRight.style.backgroundColor = "rgba(67, 67, 67, 1)";
+  primaryBikePicContainer.style.backgroundColor = "rgba(244, 244, 244, 1)";
+  bikesImage.forEach(
+    (element) => (element.style.backgroundColor = "rgba(244, 244, 244, 1)")
+  );
+  highwayRectangle.style.backgroundColor = "";
+  terrainType.style.backgroundColor = "";
+  sunIcon.style.color = "rgba(67, 67, 67, 1)";
+  moonIcon.style.color = "rgba(67, 67, 67, 1)";
+  toggleFill.style.backgroundColor = "rgba(84, 84, 84, 1)";
+  primaryDetailsButton.style.backgroundColor = "rgba(36, 180, 126, 1)";
+
+  theme = "dark";
+}
+
+applyDarkTheme();
+
+function applyLightTheme() {
+  for (let i = 0; i < allElements.length; i++) {
+    allElements[i].style.backgroundColor = "rgba(244, 244, 244, 1)";
+    allElements[i].style.color = "rgba(21, 21, 21, 1)";
+    primaryDetailsButton.style.backgroundColor = "rgba(36, 180, 126, 1)";
+  }
+  theme = "light";
+}
+
+applyLightTheme();
+
+toggle.addEventListener("change", function () {
+  theme === "light" ? applyDarkTheme() : applyLightTheme();
+});
