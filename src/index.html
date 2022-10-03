@@ -317,10 +317,34 @@
       </section>
     </main>
 
-    <!-- <h1 class="test">test1test</h1>
-    <img
-      src="<%=require('./vendor/images/highway-illustration2.jpg')%>"
-      alt="test"
-    /> -->
+    <!-- footer -->
+
+    <footer class="footer">
+      <p class="footer__text">&copy;&nbsp;Road Club 2021</p>
+      <img
+        src="<%=require('./vendor/images/footer-gear-pic.svg')%>"
+        alt="иконка шестеренка"
+        class="footer__mobile-gear-pic"
+      />
+
+      <!-- toggle -->
+
+      <div class="toggle__container">
+        <img
+          src="<%=require('./vendor/images/toggle-sun.svg')%>"
+          alt="Иконка солнце"
+          class="toggle__sun-icon"
+        />
+        <label class="toggle" name="toggle" for="toggle">
+          <input class="toggle__input" type="checkbox" id="toggle" />
+          <div class="toggle__fill"></div>
+        </label>
+        <img
+          src="<%=require('./vendor/images/toggle-moon.svg')%>"
+          alt="Иконка луна"
+          class="toggle__moon-icon"
+        />
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,6 @@
+@use "mixins" as *;
+
+.toggle__container {
+  @include flexRow;
+  align-items: center;
+}

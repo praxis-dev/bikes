@@ -95,3 +95,15 @@
 @import "../blocks/subscribe/__email-input-string/subscribe__email-input-string.scss";
 @import "../blocks/subscribe/__email/subscribe__email.scss";
 @import "../blocks/subscribe/__text/subscribe__text.scss";
+
+//footer
+
+@import "../blocks/footer/footer.scss";
+@import "../blocks/footer/__text/footer__text.scss";
+
+//toggle
+
+@import "../blocks/toggle/toggle.scss";
+@import "../blocks/toggle/__container/toggle__container.scss";
+@import "../blocks/toggle/__fill/toggle__fill.scss";
+@import "../blocks/toggle/__input/toggle__input.scss";

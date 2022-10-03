@@ -1,0 +1,16 @@
+@use "mixins" as *;
+
+.footer__text {
+  @include interSemi;
+  font-size: 14px;
+  line-height: 20px;
+  color: #cfcfcf;
+  padding-top: 12px;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer__text {
+    @include interMedium;
+    padding: 0;
+  }
+}

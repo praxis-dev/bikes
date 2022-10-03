@@ -1,0 +1,8 @@
+.toggle__input {
+  display: none;
+  background: #ffffff;
+}
+
+.toggle__input:checked ~ .toggle__fill::after {
+  transform: translateX(24px);
+}
