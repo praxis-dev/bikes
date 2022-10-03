@@ -1,0 +1,6 @@
+@use "mixins" as *;
+
+.training__text-container {
+  @include flexColumn;
+  justify-content: start;
+}

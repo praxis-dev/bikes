@@ -1,0 +1,15 @@
+@use "mixins" as *;
+
+.training__title {
+  @include sectionTitle;
+  margin-top: 2px;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 710px) {
+  .training__title {
+    @include mobileSectionTitle;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+}

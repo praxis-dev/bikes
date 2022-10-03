@@ -134,3 +134,25 @@ function hideBikesCardsForMobile() {
 hideBikesCardsForMobile();
 
 breakPointForBikes.addEventListener("change", () => hideBikesCardsForMobile());
+
+//trainingMobileReposition
+
+const trainingTitle = document.querySelector(".training__title");
+const trainingImageContainer = document.querySelector(
+  ".training__image-container"
+);
+const trainingTextContainer = document.querySelector(
+  ".training__text-container"
+);
+
+function trainingMobileReposition() {
+  if (breakPoint.matches) {
+    trainingTitle.after(trainingImageContainer);
+  } else {
+    trainingTextContainer.after(trainingImageContainer);
+  }
+}
+
+trainingMobileReposition();
+
+breakPoint.addEventListener("change", () => trainingMobileReposition());

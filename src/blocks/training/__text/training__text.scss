@@ -1,0 +1,22 @@
+@use "mixins" as *;
+
+.training__text {
+  @include sectionText;
+  margin: 0 0 39%;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 1439px) {
+  .training__text {
+    @include mobileSectionText;
+    margin-bottom: 10%;
+    border: 1px solid #000;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .training__text {
+    max-width: 284px;
+    margin-bottom: 37px;
+  }
+}
