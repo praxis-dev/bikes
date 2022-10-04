@@ -8,6 +8,10 @@
   align-items: center;
   padding: 28px 8.2% 28px;
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
 }
 
 @media screen and (max-width: 637px) {
