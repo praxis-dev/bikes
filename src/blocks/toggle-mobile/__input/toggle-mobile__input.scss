@@ -1,0 +1,8 @@
+.toggle-mobile__input {
+  display: none;
+  background: #ffffff;
+}
+
+.toggle-mobile__input:checked ~ .toggle-mobile__fill::after {
+  transform: translateX(24px);
+}

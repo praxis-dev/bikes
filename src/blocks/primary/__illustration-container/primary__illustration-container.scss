@@ -11,6 +11,12 @@
   justify-self: end;
 }
 
+@media screen and (max-width: 710px) {
+  .primary__illustration-container {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .primary__illustration-container {
     max-width: 254px;

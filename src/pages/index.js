@@ -160,6 +160,7 @@ breakPoint.addEventListener("change", () => trainingMobileReposition());
 //themeSwitcher
 
 const toggle = document.querySelector(".toggle");
+const toggleMobile = document.querySelector(".toggle-mobile");
 const allElements = document.getElementsByTagName("*");
 const highwayArrowLeft = document.querySelector(".highway__arrow-left");
 const highwayArrowRight = document.querySelector(".highway__arrow-right");
@@ -214,6 +215,10 @@ function applyLightTheme() {
 applyLightTheme();
 
 toggle.addEventListener("change", function () {
+  theme === "light" ? applyDarkTheme() : applyLightTheme();
+});
+
+toggleMobile.addEventListener("change", function () {
   theme === "light" ? applyDarkTheme() : applyLightTheme();
 });
 

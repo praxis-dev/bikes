@@ -3,11 +3,10 @@
 .toggle__container {
   @include flexRow;
   align-items: center;
-  border: 1px solid #000;
 }
 
 @media screen and (max-width: 637px) {
   .toggle__container {
-    justify-content: center;
+    display: none;
   }
 }
