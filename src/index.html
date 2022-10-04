@@ -346,5 +346,41 @@
         />
       </div>
     </footer>
+
+    <div class="popup">
+      <img
+        src="<%=require('./vendor/images/popup-close-button.svg')%>"
+        alt="иконка закрыть попап"
+        class="popup__close-button"
+      />
+      <ul class="popup__navigation">
+        <li class="popup__link-wrapper">
+          <a href="#" class="popup__link">Покрытия и градиенты</a>
+        </li>
+        <li class="popup__link-wrapper">
+          <a href="#" class="popup__link">Велосипеды</a>
+        </li>
+        <li class="popup__link-wrapper">
+          <a href="#" class="popup__link">Тренировки</a>
+        </li>
+      </ul>
+
+      <div class="toggle__container">
+        <img
+          src="<%=require('./vendor/images/toggle-sun.svg')%>"
+          alt="Иконка солнце"
+          class="toggle__sun-icon"
+        />
+        <label class="toggle" name="toggle" for="toggle">
+          <input class="toggle__input" type="checkbox" id="toggle" />
+          <div class="toggle__fill"></div>
+        </label>
+        <img
+          src="<%=require('./vendor/images/toggle-moon.svg')%>"
+          alt="Иконка луна"
+          class="toggle__moon-icon"
+        />
+      </div>
+    </div>
   </body>
 </html>

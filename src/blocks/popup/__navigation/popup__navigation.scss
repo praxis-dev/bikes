@@ -1,0 +1,12 @@
+@use "mixins";
+
+.popup__navigation {
+  @include flexColumn;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  height: 118px;
+  padding: 0 1%;
+  margin-bottom: 50vh;
+}
