@@ -157,7 +157,7 @@ trainingMobileReposition();
 
 breakPoint.addEventListener("change", () => trainingMobileReposition());
 
-//themeChanger
+//themeSwitcher
 
 const toggle = document.querySelector(".toggle");
 const allElements = document.getElementsByTagName("*");
@@ -166,7 +166,6 @@ const highwayArrowRight = document.querySelector(".highway__arrow-right");
 const primaryBikePicContainer = document.querySelector(
   ".primary__bike-picture-container"
 );
-console.log(primaryBikePicContainer);
 const bikesImage = document.querySelectorAll(".bikes__image");
 const highwayRectangle = document.querySelector(".highway__rectangle");
 const terrainType = document.querySelector(".highway__terrain-type");
@@ -216,4 +215,29 @@ applyLightTheme();
 
 toggle.addEventListener("change", function () {
   theme === "light" ? applyDarkTheme() : applyLightTheme();
+});
+
+//popupOpener
+
+const popup = document.querySelector(".popup");
+const headerMenuButton = document.querySelector(".header__menu-icon");
+
+function popupOpener() {
+  popup.style.display = "block";
+}
+
+headerMenuButton.addEventListener("click", function handleClick() {
+  popupOpener();
+});
+
+//popupClosure
+
+const popupCloseButton = document.querySelector(".popup__close-button");
+
+function popupClosure() {
+  popup.style.display = "none";
+}
+
+popupCloseButton.addEventListener("click", function handleClick() {
+  popupClosure();
 });
