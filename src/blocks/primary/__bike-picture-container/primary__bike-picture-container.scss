@@ -1,42 +1,47 @@
 .primary__bike-picture-container {
-  width: 49%;
-  background: #f4f4f4;
-  box-shadow: -20px 60px 80px 0px rgba(0, 0, 0, 0.13);
-  border-radius: 20px;
-  width: 350px;
-  padding: 15px 50px;
   position: absolute;
-  left: -210px;
-  bottom: 168px;
+  left: -200px;
+  bottom: 7%;
+  height: 400px;
+  background-color: transparent !important;
+  border: 1px solid #000;
 }
 
 @media screen and (max-width: 1254px) {
   .primary__bike-picture-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     left: -50px;
-    top: 151px;
+    top: 251px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .primary__bike-picture-container {
-    padding: 0 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 164px;
-    width: 235px;
+    width: 70%;
+    left: -20px;
+    top: 111px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .primary__bike-picture-container {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .primary__bike-picture-container {
+    top: 10%;
+    height: 80%;
     left: -10px;
-    top: 151px;
-    padding: 10px 23px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .primary__bike-picture-container {
+    width: 235px;
     left: -30px;
   }
 }

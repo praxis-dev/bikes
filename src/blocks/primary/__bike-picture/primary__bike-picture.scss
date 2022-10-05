@@ -1,8 +1,23 @@
 .primary__bike-picture {
+  max-width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 200px;
+  background: #f4f4f4;
+  box-shadow: -20px 60px 80px 0px rgba(0, 0, 0, 0.13);
+  border-radius: 20px;
+  padding: 15px 50px;
   width: 100%;
+}
+
+@media screen and (max-width: 1254px) {
+  .primary__bike-picture {
+    top: 100px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   .primary__bike-picture {
+    padding: 10% 10%;
   }
 }

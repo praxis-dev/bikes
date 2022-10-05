@@ -3,13 +3,14 @@
 .primary {
   @include gridSection;
   grid-template-columns: minmax(320px, 630px) minmax(284px, 810px);
-  margin: 0 auto;
+  margin: 5.2% auto 0;
   padding-left: 8.3%;
 }
 
 @media screen and (max-width: 710px) {
   .primary {
     grid-template-columns: minmax(284px, 810px);
+    margin: 24% auto 0;
     padding-left: 4.3%;
     padding-right: 4.3%;
   }

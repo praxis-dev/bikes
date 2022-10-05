@@ -206,6 +206,7 @@ function applyLightTheme() {
     allElements[i].style.backgroundColor = "rgba(244, 244, 244, 1)";
     allElements[i].style.color = "rgba(21, 21, 21, 1)";
     primaryDetailsButton.style.backgroundColor = "rgba(36, 180, 126, 1)";
+    primaryDetailsButton.style.color = "#FFFFFF";
     highwayRectangle.style.backgroundColor = "";
     terrainType.style.backgroundColor = "";
   }
