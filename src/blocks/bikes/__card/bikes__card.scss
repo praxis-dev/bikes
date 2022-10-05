@@ -1,5 +1,9 @@
 @use "mixins" as *;
 
+.bikes__card {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 940px) {
   .bikes__card {
     @include flexColumn;

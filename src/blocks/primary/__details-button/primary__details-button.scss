@@ -7,12 +7,22 @@
   letter-spacing: 1px;
   width: 180px;
   height: 50px;
-  background-color: rgba(36, 180, 126, 1);
+  background: rgba(36, 180, 126, 1);
   border-radius: 4px;
   color: #ffffff;
   margin-bottom: 152px;
   padding: 0;
   border: none;
+  cursor: pointer;
+
+  background: linear-gradient(to left, rgba(36, 180, 126, 1) 50%, #319e75 50%)
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.primary__details-button:hover {
+  background-position: left;
 }
 
 @media screen and (max-width: 1439px) {

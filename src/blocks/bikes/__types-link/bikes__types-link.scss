@@ -8,6 +8,7 @@
   color: #222222;
   opacity: 0.7s;
   margin-left: 38px;
+  cursor: hover;
 }
 
 .bikes__types-link:link {
@@ -18,7 +19,7 @@
   font-weight: 600;
 }
 .bikes__types-link:hover {
-  opacity: 0.6;
+  opacity: 0.75;
   text-decoration: none;
 }
 .bikes__types-link:active {

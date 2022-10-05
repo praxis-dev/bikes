@@ -1,7 +1,7 @@
 .highway__slider-button-right {
   width: 50px;
   height: 50px;
-  background: #ebebeb;
+  background: #ebebeb !important;
   border-radius: 50%;
   border: none;
   padding-top: 0;
@@ -17,4 +17,8 @@
   .highway__slider-button-right {
     margin-left: 12px;
   }
+}
+
+.highway__slider-button-right:hover {
+  opacity: 0.6;
 }
