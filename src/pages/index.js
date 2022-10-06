@@ -247,3 +247,31 @@ function popupClosure() {
 popupCloseButton.addEventListener("click", function handleClick() {
   popupClosure();
 });
+
+//showOkOnsubmit
+
+const emailInputString = document.querySelector(
+  ".subscribe__email-input-string"
+);
+const emailInputSubmit = document.querySelector(
+  ".subscribe__email-input-submit"
+);
+
+function makeOkVisible() {
+  emailInputSubmit.style.display = "block";
+}
+
+emailInputString.addEventListener("click", function handleClick() {
+  makeOkVisible();
+});
+
+//sayCoolWhenSubmitted
+
+function sayCoolHideOk() {
+  emailInputString.placeholder = "Круто!";
+  emailInputSubmit.style.display = "none";
+}
+
+emailInputSubmit.addEventListener("click", function handleClick() {
+  sayCoolHideOk();
+});
