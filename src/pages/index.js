@@ -269,6 +269,7 @@ emailInputString.addEventListener("click", function handleClick() {
 
 function sayCoolHideOk() {
   emailInputString.placeholder = "Круто!";
+  emailInputString.value = "Круто!";
   emailInputSubmit.style.display = "none";
 }
 
