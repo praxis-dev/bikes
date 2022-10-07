@@ -1,0 +1,6 @@
+@use "mixins";
+
+.bikes__types-link_selected {
+  @include interSemi;
+  opacity: 1;
+}
