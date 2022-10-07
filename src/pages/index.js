@@ -308,3 +308,46 @@ rightArrows.forEach(function (elem) {
     scrollRight();
   });
 });
+
+//scrollBikes
+
+const linksToHighway = document.querySelectorAll(".bikes__types-link_highway");
+const linksToGravel = document.querySelectorAll(".bikes__types-link_gravel");
+const linksToTt = document.querySelectorAll(".bikes__types-link_tt");
+const bikesHighway = document.getElementById("highway");
+const bikesGravel = document.getElementById("gravel");
+const bikesTt = document.getElementById("TT");
+console.log(bikesTt);
+
+linksToHighway.forEach(function (elem) {
+  elem.addEventListener("click", function () {
+    console.log("triggered");
+    bikesHighway.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  });
+});
+
+linksToGravel.forEach(function (elem) {
+  elem.addEventListener("click", function () {
+    console.log("triggered");
+    bikesGravel.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  });
+});
+
+linksToTt.forEach(function (elem) {
+  elem.addEventListener("click", function () {
+    console.log("triggered");
+    bikesTt.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  });
+});
