@@ -276,3 +276,33 @@ function sayCoolHideOk() {
 emailInputSubmit.addEventListener("click", function handleClick() {
   sayCoolHideOk();
 });
+
+//scrollTerrainTypes
+
+const leftArrows = document.querySelectorAll(".highway__slider-button-left");
+const rightArrows = document.querySelectorAll(".highway__slider-button-right");
+const highwaySlidesContainer = document.querySelector(
+  ".highway__slides-container"
+);
+
+function scrollLeft() {
+  highwaySlidesContainer.scrollBy(-200, 0);
+  console.log("leftClicked");
+}
+
+function scrollRight() {
+  highwaySlidesContainer.scrollBy(200, 0);
+  console.log("rightClicked");
+}
+
+leftArrows.forEach(function (elem) {
+  elem.addEventListener("click", function () {
+    scrollLeft();
+  });
+});
+
+rightArrows.forEach(function (elem) {
+  elem.addEventListener("click", function () {
+    scrollRight();
+  });
+});

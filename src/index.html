@@ -109,73 +109,214 @@
 
       <!-- highway -->
 
-      <section class="highway">
-        <svg
-          class="highway__mobile-line"
-          width="284"
-          height="1"
-          viewBox="0 0 284 1"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
-        </svg>
-        <div class="highway__text-container">
-          <h2 class="highway__title">Шоссе</h2>
-          <p class="highway__text">
-            На шоссейном велосипеде можно ездить по асфальту на разных
-            градиентах: будь то горы или равнины. Гонки проходят в командном
-            пелотоне, но тренироваться можно и самостоятельно.
-          </p>
-        </div>
+      <section class="highway__slides-container">
+        <div class="highway">
+          <svg
+            class="highway__mobile-line"
+            width="284"
+            height="1"
+            viewBox="0 0 284 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+          </svg>
+          <div class="highway__text-container">
+            <h2 class="highway__title">Шоссе</h2>
+            <p class="highway__text">
+              На шоссейном велосипеде можно ездить по асфальту на разных
+              градиентах: будь то горы или равнины. Гонки проходят в командном
+              пелотоне, но тренироваться можно и самостоятельно.
+            </p>
+          </div>
 
-        <div class="highway__images-container-left">
-          <img
-            src="<%=require('./vendor/images/highway-illustration1.jpg')%>"
-            alt="Иллюстрация секции шоссе"
-            class="highway__image"
-          />
-          <div class="highway__rectangle">
+          <div class="highway__images-container-left">
             <img
-              src="<%=require('./vendor/images/terrain-type-highway.svg')%>"
-              alt="Иконка тип поверхности"
-              class="highway__terrain-type"
+              src="<%=require('./vendor/images/highway-illustration1.jpg')%>"
+              alt="Иллюстрация секции шоссе"
+              class="highway__image"
+            />
+            <div class="highway__rectangle">
+              <img
+                src="<%=require('./vendor/images/terrain-type-highway.svg')%>"
+                alt="Иконка тип поверхности"
+                class="highway__terrain-type"
+              />
+            </div>
+          </div>
+          <div class="highway__images-container-right">
+            <img
+              src="<%=require('./vendor/images/highway-illustration2.jpg')%>"
+              alt="Иллюстрация секции шоссе"
+              class="highway__image"
             />
           </div>
+
+          <div class="highway__slider-buttons-container">
+            <button class="highway__slider-button-left">
+              <img
+                src="<%=require('./vendor/images/arrow-left.svg')%>"
+                alt="Слайдер стрелка лево"
+                class="highway__arrow-left"
+              />
+              <img
+                src="<%=require('./vendor/images/small-arrow-left.svg')%>"
+                alt="Малая слайдер стрелка лево"
+                class="highway__small-arrow-left"
+              />
+            </button>
+            <button class="highway__slider-button-right">
+              <img
+                src="<%=require('./vendor/images/arrow-right.svg')%>"
+                alt="Слайдер стрелка вправо"
+                class="highway__arrow-right"
+              />
+              <img
+                src="<%=require('./vendor/images/small-arrow-right.svg')%>"
+                alt="Малая слайдер стрелка вправо"
+                class="highway__small-arrow-right"
+              />
+            </button>
+          </div>
         </div>
-        <div class="highway__images-container-right">
-          <img
-            src="<%=require('./vendor/images/highway-illustration2.jpg')%>"
-            alt="Иллюстрация секции шоссе"
-            class="highway__image"
-          />
+        <div class="highway">
+          <svg
+            class="highway__mobile-line"
+            width="284"
+            height="1"
+            viewBox="0 0 284 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+          </svg>
+          <div class="highway__text-container">
+            <h2 class="highway__title">Грэвел</h2>
+            <p class="highway__text">
+              Грэвел похож на шоссейный велосипед, но конструкция рамы немного
+              отличается, и на нём стоят более широкие покрышки, всё для того
+              чтобы проехать по лёгкому бездорожью.
+            </p>
+          </div>
+
+          <div class="highway__images-container-left">
+            <img
+              src="<%=require('./vendor/images/gravel-illustration1.jpg')%>"
+              alt="Иллюстрация секции шоссе"
+              class="highway__image"
+            />
+            <div class="highway__rectangle">
+              <img
+                src="<%=require('./vendor/images/terrain-type-highway.svg')%>"
+                alt="Иконка тип поверхности"
+                class="highway__terrain-type"
+              />
+            </div>
+          </div>
+          <div class="highway__images-container-right">
+            <img
+              src="<%=require('./vendor/images/gravel-illustration2.jpg')%>"
+              alt="Иллюстрация секции шоссе"
+              class="highway__image"
+            />
+          </div>
+
+          <div class="highway__slider-buttons-container">
+            <button class="highway__slider-button-left">
+              <img
+                src="<%=require('./vendor/images/arrow-left.svg')%>"
+                alt="Слайдер стрелка лево"
+                class="highway__arrow-left"
+              />
+              <img
+                src="<%=require('./vendor/images/small-arrow-left.svg')%>"
+                alt="Малая слайдер стрелка лево"
+                class="highway__small-arrow-left"
+              />
+            </button>
+            <button class="highway__slider-button-right">
+              <img
+                src="<%=require('./vendor/images/arrow-right.svg')%>"
+                alt="Слайдер стрелка вправо"
+                class="highway__arrow-right"
+              />
+              <img
+                src="<%=require('./vendor/images/small-arrow-right.svg')%>"
+                alt="Малая слайдер стрелка вправо"
+                class="highway__small-arrow-right"
+              />
+            </button>
+          </div>
         </div>
 
-        <div class="highway__slider-buttons-container">
-          <button class="highway__slider-button-left">
+        <div class="highway">
+          <svg
+            class="highway__mobile-line"
+            width="284"
+            height="1"
+            viewBox="0 0 284 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+          </svg>
+          <div class="highway__text-container">
+            <h2 class="highway__title">ТТ</h2>
+            <p class="highway__text">
+              ТТ — это велосипед для триатлона или раздельного старта, гоняют на
+              таком велике только по равнинному асфальту, велики очень быстрые и
+              аэродинамичный.
+            </p>
+          </div>
+
+          <div class="highway__images-container-left">
             <img
-              src="<%=require('./vendor/images/arrow-left.svg')%>"
-              alt="Слайдер стрелка лево"
-              class="highway__arrow-left"
+              src="<%=require('./vendor/images/tt-illustration1.jpg')%>"
+              alt="Иллюстрация секции шоссе"
+              class="highway__image"
             />
+            <div class="highway__rectangle">
+              <img
+                src="<%=require('./vendor/images/terrain-type-highway.svg')%>"
+                alt="Иконка тип поверхности"
+                class="highway__terrain-type"
+              />
+            </div>
+          </div>
+          <div class="highway__images-container-right">
             <img
-              src="<%=require('./vendor/images/small-arrow-left.svg')%>"
-              alt="Малая слайдер стрелка лево"
-              class="highway__small-arrow-left"
+              src="<%=require('./vendor/images/tt-illustration2.jpg')%>"
+              alt="Иллюстрация секции шоссе"
+              class="highway__image"
             />
-          </button>
-          <button class="highway__slider-button-right">
-            <img
-              src="<%=require('./vendor/images/arrow-right.svg')%>"
-              alt="Слайдер стрелка вправо"
-              class="highway__arrow-right"
-            />
-            <img
-              src="<%=require('./vendor/images/small-arrow-right.svg')%>"
-              alt="Малая слайдер стрелка вправо"
-              class="highway__small-arrow-right"
-            />
-          </button>
+          </div>
+
+          <div class="highway__slider-buttons-container">
+            <button class="highway__slider-button-left">
+              <img
+                src="<%=require('./vendor/images/arrow-left.svg')%>"
+                alt="Слайдер стрелка лево"
+                class="highway__arrow-left"
+              />
+              <img
+                src="<%=require('./vendor/images/small-arrow-left.svg')%>"
+                alt="Малая слайдер стрелка лево"
+                class="highway__small-arrow-left"
+              />
+            </button>
+            <button class="highway__slider-button-right">
+              <img
+                src="<%=require('./vendor/images/arrow-right.svg')%>"
+                alt="Слайдер стрелка вправо"
+                class="highway__arrow-right"
+              />
+              <img
+                src="<%=require('./vendor/images/small-arrow-right.svg')%>"
+                alt="Малая слайдер стрелка вправо"
+                class="highway__small-arrow-right"
+              />
+            </button>
+          </div>
         </div>
       </section>
 
