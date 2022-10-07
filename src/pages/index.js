@@ -168,8 +168,8 @@ const primaryBikePicContainer = document.querySelector(
   ".primary__bike-picture-container"
 );
 const bikesImage = document.querySelectorAll(".bikes__image");
-const highwayRectangle = document.querySelector(".highway__rectangle");
-const terrainType = document.querySelector(".highway__terrain-type");
+const highwayRectangle = document.querySelectorAll(".highway__rectangle");
+const terrainType = document.querySelectorAll(".highway__terrain-type");
 const sunIcon = document.querySelector(".toggle__sun-icon");
 const moonIcon = document.querySelector(".toggle__moon-icon");
 const primaryDetailsButton = document.querySelector(".primary__details-button");
@@ -189,8 +189,10 @@ function applyDarkTheme() {
   bikesImage.forEach(
     (element) => (element.style.backgroundColor = "rgba(244, 244, 244, 1)")
   );
-  highwayRectangle.style.backgroundColor = "";
-  terrainType.style.backgroundColor = "";
+  // highwayRectangle.style.backgroundColor = "";
+  highwayRectangle.forEach((element) => (element.style.backgroundColor = ""));
+  terrainType.forEach((element) => (element.style.backgroundColor = ""));
+  // terrainType.style.backgroundColor = "";
   sunIcon.style.color = "rgba(67, 67, 67, 1)";
   moonIcon.style.color = "rgba(67, 67, 67, 1)";
   toggleFill.style.backgroundColor = "rgba(84, 84, 84, 1)";
@@ -207,8 +209,8 @@ function applyLightTheme() {
     allElements[i].style.color = "rgba(21, 21, 21, 1)";
     primaryDetailsButton.style.backgroundColor = "rgba(36, 180, 126, 1)";
     primaryDetailsButton.style.color = "#FFFFFF";
-    highwayRectangle.style.backgroundColor = "";
-    terrainType.style.backgroundColor = "";
+    highwayRectangle.forEach((element) => (element.style.backgroundColor = ""));
+    terrainType.forEach((element) => (element.style.backgroundColor = ""));
   }
   theme = "light";
 }
