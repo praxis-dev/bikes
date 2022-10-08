@@ -3,6 +3,8 @@
 .highway__images-container-left {
   position: relative;
   margin-bottom: 15px;
+  @include testWithBorder;
+  height: fit-content;
 }
 
 @media screen and (max-width: 710px) {

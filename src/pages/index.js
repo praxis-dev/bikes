@@ -29,9 +29,13 @@ const highwayIllustrations = document.querySelectorAll(".highway__image");
 
 function hideHighwayPicForMobile() {
   if (breakPoint.matches) {
-    highwayIllustrations[1].style.display = "none";
+    for (let i = 1; i < highwayIllustrations.length; i += 2) {
+      highwayIllustrations[i].style.display = "none";
+    }
   } else {
-    highwayIllustrations[1].style.display = "block";
+    for (let i = 1; i < highwayIllustrations.length; i += 2) {
+      highwayIllustrations[i].style.display = "block";
+    }
   }
 }
 
@@ -289,12 +293,10 @@ const highwaySlidesContainer = document.querySelector(
 
 function scrollLeft() {
   highwaySlidesContainer.scrollBy(-200, 0);
-  console.log("leftClicked");
 }
 
 function scrollRight() {
   highwaySlidesContainer.scrollBy(200, 0);
-  console.log("rightClicked");
 }
 
 leftArrows.forEach(function (elem) {
@@ -317,11 +319,9 @@ const linksToTt = document.querySelectorAll(".bikes__types-link_tt");
 const bikesHighway = document.getElementById("highway");
 const bikesGravel = document.getElementById("gravel");
 const bikesTt = document.getElementById("TT");
-console.log(bikesTt);
 
 linksToHighway.forEach(function (elem) {
   elem.addEventListener("click", function () {
-    console.log("triggered");
     bikesHighway.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
