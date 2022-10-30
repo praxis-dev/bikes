@@ -1,0 +1,6 @@
+.highway__slide {
+  grid-template-columns: auto auto;
+  column-gap: 4%;
+  display: grid;
+  scroll-snap-align: start;
+}

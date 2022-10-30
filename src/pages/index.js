@@ -46,6 +46,8 @@ breakPoint.addEventListener("change", () => hideHighwayPicForMobile());
 // repositionHighwaySelectorForMobile
 
 const highwaySection = document.querySelector(".highway");
+const highwaySections = document.querySelectorAll(".highway");
+const highwaySlides = document.querySelectorAll(".highway__slide");
 const highwayTitle = document.querySelector(".highway__title");
 const highwayPicSelector = document.querySelector(
   ".highway__slider-buttons-container"
@@ -59,68 +61,50 @@ const highwayArrowRightContainer = document.querySelector(
   ".highway__slider-button-right"
 );
 
-function repositionHighwaySelectorForMobile() {
+//highwaySwapForMobile
+
+console.log(highwaySlides);
+
+function restructureSlides(highwaySlides) {
   if (breakPoint.matches) {
-    mobileTitleAndSelectorWrapper.classList.add(
-      "highway__title-and-selector-wrapper"
-    );
-    highwayMobileLine.after(highwayTitle);
-    highwayTitle.after(mobileTitleAndSelectorWrapper);
-    mobileTitleAndSelectorWrapper.appendChild(highwayTitle);
-    mobileTitleAndSelectorWrapper.appendChild(highwayPicSelector);
-    mobileTitleAndSelectorWrapper.style.display = "flex";
-    mobileTitleAndSelectorWrapper.style.flexDirection = "row";
-    mobileTitleAndSelectorWrapper.style.justifyContent = "space-between";
-    mobileTitleAndSelectorWrapper.style.alignItems = "center";
-    mobileTitleAndSelectorWrapper.style.marginBottom = "5px";
-
-    highwayArrowLeftContainer.style.width = "24px";
-    highwayArrowLeftContainer.style.height = "24px";
-    highwayArrowRightContainer.style.width = "24px";
-    highwayArrowRightContainer.style.height = "24px";
+    highwaySlides.forEach((slide) => {
+      const highwayTitle = slide.querySelector(".highway__title");
+      const highwayImagesLeftContainer = slide.querySelector(
+        ".highway__images-container-left"
+      );
+      const highwayTextContainer = slide.querySelector(
+        ".highway__text-container"
+      );
+      highwayImagesLeftContainer.parentNode.insertBefore(
+        highwayImagesLeftContainer,
+        highwayTextContainer
+      );
+    });
   } else {
-    highwayArrowLeftContainer.style.width = "50px";
-    highwayArrowLeftContainer.style.height = "50px";
-    highwayArrowRightContainer.style.width = "50px";
-    highwayArrowRightContainer.style.height = "50px";
-
-    highwaySection.prepend(highwayTitle);
-
-    mobileTitleAndSelectorWrapper.remove();
-
-    highwaySection.appendChild(highwayPicSelector);
+    highwaySlides.forEach((slide) => {
+      const highwayTitle = slide.querySelector(".highway__title");
+      const highwayImagesLeftContainer = slide.querySelector(
+        ".highway__images-container-left"
+      );
+      const highwayTextContainer = slide.querySelector(
+        ".highway__text-container"
+      );
+      highwayTextContainer.parentNode.insertBefore(
+        highwayTextContainer,
+        highwayImagesLeftContainer
+      );
+    });
   }
 }
 
-repositionHighwaySelectorForMobile();
+restructureSlides(highwaySlides);
 
-breakPoint.addEventListener("change", () =>
-  repositionHighwaySelectorForMobile()
-);
-
-//highwaySwapForMobile
+breakPoint.addEventListener("change", () => restructureSlides(highwaySlides));
 
 const highwayImagesLeftContainer = document.querySelector(
   ".highway__images-container-left"
 );
 const highwayTextContainer = document.querySelector(".highway__text-container");
-
-function highwaySwapForMobile() {
-  if (breakPoint.matches) {
-    highwayImagesLeftContainer.parentNode.insertBefore(
-      highwayImagesLeftContainer,
-      highwayTextContainer
-    );
-  } else {
-    highwayTextContainer.parentNode.insertBefore(
-      highwayTextContainer,
-      highwayImagesLeftContainer
-    );
-  }
-}
-highwaySwapForMobile();
-
-breakPoint.addEventListener("change", () => highwaySwapForMobile());
 
 // hideBikesCardsForMobile;
 

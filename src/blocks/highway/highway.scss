@@ -2,13 +2,12 @@
 
 .highway {
   @include gridSection;
-  grid-template-columns: repeat(2, minmax(284px, 650px));
+  grid-template-columns: minmax(284px, 1340px);
   padding: 4% 0 8% 8.3%;
   justify-content: space-between;
   column-gap: 2%;
   margin-bottom: 60px;
   border: 1px solid;
-  scroll-snap-align: start;
 }
 
 @media screen and (max-width: 710px) {
