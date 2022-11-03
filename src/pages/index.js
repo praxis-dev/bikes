@@ -30,11 +30,8 @@ const highwayRightPics = document.querySelectorAll(
   ".highway__images-container-right"
 );
 
-console.log(highwayRightPics);
-
 function hideHighwayPicForMobile() {
   if (breakPoint.matches) {
-    console.log("hidden");
     highwayRightPics.forEach((container) => {
       container.style.display = "none";
     });
@@ -133,20 +130,26 @@ breakPoint.addEventListener("change", () =>
 
 // hideBikesCardsForMobile;
 
-const bikesCards = document.querySelectorAll(".bikes__card");
+const bikesSlides = document.querySelectorAll(".bikes__slide");
 
-function hideBikesCardsForMobile() {
-  if (breakPointForBikes.matches) {
-    bikesCards[1].style.display = "none";
-    bikesCards[2].style.display = "none";
-  } else {
-    bikesCards[1].style.display = "block";
-    bikesCards[2].style.display = "block";
-  }
+function hideBikesCardsForMobile(bikesSlides) {
+  bikesSlides.forEach((slide) => {
+    if (breakPointForBikes.matches) {
+      const bikesCards = slide.querySelectorAll(".bikes__card");
+      bikesCards[1].style.display = "none";
+      bikesCards[2].style.display = "none";
+    } else {
+      const bikesCards = slide.querySelectorAll(".bikes__card");
+      bikesCards[1].style.display = "block";
+      bikesCards[2].style.display = "block";
+    }
+  });
 }
-hideBikesCardsForMobile();
+hideBikesCardsForMobile(bikesSlides);
 
-breakPointForBikes.addEventListener("change", () => hideBikesCardsForMobile());
+breakPointForBikes.addEventListener("change", () =>
+  hideBikesCardsForMobile(bikesSlides)
+);
 
 //trainingMobileReposition
 
@@ -322,6 +325,10 @@ rightArrows.forEach(function (elem) {
 
 //scrollBikes
 
+const kebabLeft = document.querySelector(".three-dots-menu__dot_left");
+const kebabMiddle = document.querySelector(".three-dots-menu__dot_middle");
+const kebabRight = document.querySelector(".three-dots-menu__dot_right");
+
 const linksToHighway = document.querySelectorAll(".bikes__types-link_highway");
 const linksToGravel = document.querySelectorAll(".bikes__types-link_gravel");
 const linksToTt = document.querySelectorAll(".bikes__types-link_tt");
@@ -330,6 +337,8 @@ const bikesGravel = document.getElementById("gravel");
 const bikesTt = document.getElementById("TT");
 
 linksToHighway.forEach(function (elem) {
+  console.log("link to gravel triggered");
+  kebabLeftActive();
   elem.addEventListener("click", function () {
     bikesHighway.scrollIntoView({
       behavior: "smooth",
@@ -341,7 +350,8 @@ linksToHighway.forEach(function (elem) {
 
 linksToGravel.forEach(function (elem) {
   elem.addEventListener("click", function () {
-    console.log("triggered");
+    kebabMiddleActive();
+    console.log("link to gravel triggered");
     bikesGravel.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
@@ -352,7 +362,8 @@ linksToGravel.forEach(function (elem) {
 
 linksToTt.forEach(function (elem) {
   elem.addEventListener("click", function () {
-    console.log("triggered");
+    kebabRightActive();
+    console.log("link to TT triggered");
     bikesTt.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
@@ -360,3 +371,23 @@ linksToTt.forEach(function (elem) {
     });
   });
 });
+
+// active kebab menu
+
+function kebabLeftActive() {
+  kebabLeft.classList.add(".three-dots-menu__dot_active");
+  kebabMiddle.classList.remove(".three-dots-menu__dot_active");
+  kebabRight.classList.remove(".three-dots-menu__dot_active");
+}
+
+function kebabMiddleActive() {
+  kebabLeft.classList.remove(".three-dots-menu__dot_active");
+  kebabMiddle.classList.add(".three-dots-menu__dot_active");
+  kebabRight.classList.remove(".three-dots-menu__dot_active");
+}
+
+function kebabRightActive() {
+  kebabLeft.classList.remove(".three-dots-menu__dot_active");
+  kebabMiddle.classList.remove(".three-dots-menu__dot_active");
+  kebabRight.classList.add(".three-dots-menu__dot_active");
+}

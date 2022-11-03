@@ -1,0 +1,37 @@
+@use "mixins";
+
+.bikes__slide {
+  @include gridSection;
+  grid-template-columns: repeat(3, minmax(284px, 380px));
+  row-gap: 8%;
+  column-gap: 2.8%;
+  padding: 4% 8% 8.3%;
+  scroll-snap-align: start;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 1090px) {
+  .bikes__slide {
+    grid-template-columns: repeat(2, minmax(284px, 380px));
+    justify-content: space-between;
+    row-gap: 1.8%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .bikes__slide {
+    padding: 14% 8.3%;
+    grid-template-columns: minmax(284px, 100%);
+    column-gap: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .bikes {
+    padding: 14% 4.3%;
+    grid-template-columns: minmax(284px, 100%);
+    column-gap: 0;
+    justify-content: center;
+  }
+}

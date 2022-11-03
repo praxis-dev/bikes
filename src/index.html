@@ -246,286 +246,253 @@
 
       <!-- bikes -->
 
-      <section class="bikes__slides-container">
-        <!-- highway -->
+      <section class="bikes">
+        <div class="bikes__slides-container">
+          <!-- highway -->
 
-        <div class="bikes" id="highway">
-          <svg
-            class="highway__mobile-line"
-            width="284"
-            height="1"
-            viewBox="0 0 284 1"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
-          </svg>
-          <div class="bikes__title-and-selector">
-            <h2 class="bikes__title">Велосипеды</h2>
-            <nav class="bikes__types-selector">
-              <ul class="bikes__types-list">
-                <li class="bikes__types-list-bullet">
-                  <a
-                    href="#/"
-                    class="bikes__types-link bikes__types-link_highway bikes__types-link_selected"
-                    >Шоссе</a
-                  >
-                </li>
-                <li class="bikes__types-list-bullet">
-                  <a
-                    href="#/"
-                    class="bikes__types-link bikes__types-link_gravel"
-                    >Грэвел</a
-                  >
-                </li>
-                <li class="bikes__types-list-bullet">
-                  <a href="#/" class="bikes__types-link bikes__types-link_tt"
-                    >ТТ</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="bikes__mobile-selector-wrapper">
-            <label for="bikes__mobile-selector"></label
-            ><select
-              class="bikes__mobile-selector"
-              name="bikes__mobile-selector"
-              id="bikes__mobile-selector"
+          <div class="bikes__slide" id="highway">
+            <svg
+              class="highway__mobile-line"
+              width="284"
+              height="1"
+              viewBox="0 0 284 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <option value="highway">Шоссе</option>
-              <option value="TT">ТТ</option>
-              <option value="Gravel">Грэвэл</option>
-            </select>
+              <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+            </svg>
+            <div class="bikes__title-and-selector">
+              <h2 class="bikes__title">Велосипеды</h2>
+              <nav class="bikes__types-selector">
+                <ul class="bikes__types-list">
+                  <li class="bikes__types-list-bullet">
+                    <a
+                      href="#/"
+                      class="bikes__types-link bikes__types-link_highway bikes__types-link_selected"
+                      >Шоссе</a
+                    >
+                  </li>
+                  <li class="bikes__types-list-bullet">
+                    <a
+                      href="#/"
+                      class="bikes__types-link bikes__types-link_gravel"
+                      >Грэвел</a
+                    >
+                  </li>
+                  <li class="bikes__types-list-bullet">
+                    <a href="#/" class="bikes__types-link bikes__types-link_tt"
+                      >ТТ</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="bikes__mobile-selector-wrapper">
+              <label for="bikes__mobile-selector"></label
+              ><select
+                class="bikes__mobile-selector"
+                name="bikes__mobile-selector"
+                id="bikes__mobile-selector"
+              >
+                <option value="highway">Шоссе</option>
+                <option value="TT">ТТ</option>
+                <option value="Gravel">Грэвэл</option>
+              </select>
+            </div>
+
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Cervelo-Caledonia.jpg')%>"
+                alt="Cervelo-Caledonia"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Cervelo Caledonia-5</p>
+            </article>
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Cannondale-Systemix-Himod.jpg')%>"
+                alt="Cannondale Systemix Himod"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Cannondale Systemsix Himod</p>
+            </article>
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Trek-Domane SL-7.jpg')%>"
+                alt="Trek Domane"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Trek Domane SL-7</p>
+            </article>
           </div>
 
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Cervelo-Caledonia.jpg')%>"
-              alt="Cervelo-Caledonia"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Cervelo Caledonia-5</p>
-          </article>
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Cannondale-Systemix-Himod.jpg')%>"
-              alt="Cannondale Systemix Himod"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Cannondale Systemsix Himod</p>
-          </article>
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Trek-Domane SL-7.jpg')%>"
-              alt="Trek Domane"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Trek Domane SL-7</p>
+          <!-- gravel -->
 
-            <div class="three-dots-menu">
-              <div
-                class="three-dots-menu__dot three-dots-menu__dot_active"
-              ></div>
-              <div class="three-dots-menu__dot"></div>
-              <div class="three-dots-menu__dot"></div>
+          <div class="bikes__slide" id="gravel">
+            <svg
+              class="highway__mobile-line"
+              width="284"
+              height="1"
+              viewBox="0 0 284 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+            </svg>
+            <div class="bikes__title-and-selector">
+              <h2 class="bikes__title">Велосипеды</h2>
+              <nav class="bikes__types-selector">
+                <ul class="bikes__types-list">
+                  <li class="bikes__types-list-bullet">
+                    <a
+                      href="#/"
+                      class="bikes__types-link bikes__types-link_highway"
+                      >Шоссе</a
+                    >
+                  </li>
+                  <li class="bikes__types-list-bullet">
+                    <a
+                      href="#/"
+                      class="bikes__types-link bikes__types-link_gravel bikes__types-link_selected"
+                      >Грэвел</a
+                    >
+                  </li>
+                  <li class="bikes__types-list-bullet">
+                    <a href="#/" class="bikes__types-link bikes__types-link_tt"
+                      >ТТ</a
+                    >
+                  </li>
+                </ul>
+              </nav>
             </div>
-          </article>
 
-          <div class="three-dots-menu">
-            <div class="three-dots-menu__dot three-dots-menu__dot_active"></div>
-            <div class="three-dots-menu__dot"></div>
-            <div class="three-dots-menu__dot"></div>
+            <div class="bikes__mobile-selector-wrapper">
+              <label for="bikes__mobile-selector"></label
+              ><select
+                class="bikes__mobile-selector"
+                name="bikes__mobile-selector"
+                id="bikes__mobile-selector"
+              >
+                <option value="highway">Шоссе</option>
+                <option value="TT">ТТ</option>
+                <option value="Gravel">Грэвэл</option>
+              </select>
+            </div>
+
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Cervelo Aspero GRX 810.jpg')%>"
+                alt="Cervelo Aspero GRX 810"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Cervelo Aspero GRX 810</p>
+            </article>
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Specialized S-Works Diverge.jpg')%>"
+                alt="Specialized S-Works Diverge"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Specialized S-Works Diverge</p>
+            </article>
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Cannondale Topstone Lefty 3.jpg')%>"
+                alt="Trek Domane"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Cannondale Topstone Lefty 3</p>
+            </article>
+          </div>
+
+          <!-- TT -->
+
+          <div class="bikes__slide" id="TT">
+            <svg
+              class="highway__mobile-line"
+              width="284"
+              height="1"
+              viewBox="0 0 284 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+            </svg>
+            <div class="bikes__title-and-selector">
+              <h2 class="bikes__title">Велосипеды</h2>
+              <nav class="bikes__types-selector">
+                <ul class="bikes__types-list">
+                  <li class="bikes__types-list-bullet">
+                    <a
+                      href="#/"
+                      class="bikes__types-link bikes__types-link_highway"
+                      >Шоссе</a
+                    >
+                  </li>
+                  <li class="bikes__types-list-bullet">
+                    <a
+                      href="#/"
+                      class="bikes__types-link bikes__types-link_gravel"
+                      >Грэвел</a
+                    >
+                  </li>
+                  <li class="bikes__types-list-bullet">
+                    <a
+                      href="#/"
+                      class="bikes__types-link bikes__types-link_tt bikes__types-link_selected"
+                      >ТТ</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="bikes__mobile-selector-wrapper">
+              <label for="bikes__mobile-selector"></label
+              ><select
+                class="bikes__mobile-selector"
+                name="bikes__mobile-selector"
+                id="bikes__mobile-selector"
+              >
+                <option value="highway">Шоссе</option>
+                <option value="TT">ТТ</option>
+                <option value="Gravel">Грэвэл</option>
+              </select>
+            </div>
+
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Specialized S-Works Shiv.jpg')%>"
+                alt="Specialized S-Works Shiv"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Specialized S-Works Shiv</p>
+            </article>
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/BMC Timemachine 01 ONE.jpg')%>"
+                alt="BMC Timemachine 01 ONE"
+                class="bikes__image"
+              />
+              <p class="bikes__name">BMC Timemachine 01 ONE</p>
+            </article>
+            <article class="bikes__card">
+              <img
+                src="<%=require('./vendor/images/Cervelo P-Series.jpg')%>"
+                alt="Cervelo P-Series"
+                class="bikes__image"
+              />
+              <p class="bikes__name">Cervelo P-Series</p>
+            </article>
           </div>
         </div>
-
-        <!-- gravel -->
-
-        <div class="bikes" id="gravel">
-          <svg
-            class="highway__mobile-line"
-            width="284"
-            height="1"
-            viewBox="0 0 284 1"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
-          </svg>
-          <div class="bikes__title-and-selector">
-            <h2 class="bikes__title">Велосипеды</h2>
-            <nav class="bikes__types-selector">
-              <ul class="bikes__types-list">
-                <li class="bikes__types-list-bullet">
-                  <a
-                    href="#/"
-                    class="bikes__types-link bikes__types-link_highway"
-                    >Шоссе</a
-                  >
-                </li>
-                <li class="bikes__types-list-bullet">
-                  <a
-                    href="#/"
-                    class="bikes__types-link bikes__types-link_gravel bikes__types-link_selected"
-                    >Грэвел</a
-                  >
-                </li>
-                <li class="bikes__types-list-bullet">
-                  <a href="#/" class="bikes__types-link bikes__types-link_tt"
-                    >ТТ</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="bikes__mobile-selector-wrapper">
-            <label for="bikes__mobile-selector"></label
-            ><select
-              class="bikes__mobile-selector"
-              name="bikes__mobile-selector"
-              id="bikes__mobile-selector"
-            >
-              <option value="highway">Шоссе</option>
-              <option value="TT">ТТ</option>
-              <option value="Gravel">Грэвэл</option>
-            </select>
-          </div>
-
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Cervelo Aspero GRX 810.jpg')%>"
-              alt="Cervelo Aspero GRX 810"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Cervelo Aspero GRX 810</p>
-          </article>
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Specialized S-Works Diverge.jpg')%>"
-              alt="Specialized S-Works Diverge"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Specialized S-Works Diverge</p>
-          </article>
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Cannondale Topstone Lefty 3.jpg')%>"
-              alt="Trek Domane"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Cannondale Topstone Lefty 3</p>
-
-            <div class="three-dots-menu">
-              <div class="three-dots-menu__dot"></div>
-              <div
-                class="three-dots-menu__dot three-dots-menu__dot_active"
-              ></div>
-              <div class="three-dots-menu__dot"></div>
-            </div>
-          </article>
-
-          <div class="three-dots-menu">
-            <div class="three-dots-menu__dot"></div>
-            <div class="three-dots-menu__dot three-dots-menu__dot_active"></div>
-            <div class="three-dots-menu__dot"></div>
-          </div>
-        </div>
-
-        <!-- TT -->
-
-        <div class="bikes" id="TT">
-          <svg
-            class="highway__mobile-line"
-            width="284"
-            height="1"
-            viewBox="0 0 284 1"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
-          </svg>
-          <div class="bikes__title-and-selector">
-            <h2 class="bikes__title">Велосипеды</h2>
-            <nav class="bikes__types-selector">
-              <ul class="bikes__types-list">
-                <li class="bikes__types-list-bullet">
-                  <a
-                    href="#/"
-                    class="bikes__types-link bikes__types-link_highway"
-                    >Шоссе</a
-                  >
-                </li>
-                <li class="bikes__types-list-bullet">
-                  <a
-                    href="#/"
-                    class="bikes__types-link bikes__types-link_gravel"
-                    >Грэвел</a
-                  >
-                </li>
-                <li class="bikes__types-list-bullet">
-                  <a
-                    href="#/"
-                    class="bikes__types-link bikes__types-link_tt bikes__types-link_selected"
-                    >ТТ</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="bikes__mobile-selector-wrapper">
-            <label for="bikes__mobile-selector"></label
-            ><select
-              class="bikes__mobile-selector"
-              name="bikes__mobile-selector"
-              id="bikes__mobile-selector"
-            >
-              <option value="highway">Шоссе</option>
-              <option value="TT">ТТ</option>
-              <option value="Gravel">Грэвэл</option>
-            </select>
-          </div>
-
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Specialized S-Works Shiv.jpg')%>"
-              alt="Specialized S-Works Shiv"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Specialized S-Works Shiv</p>
-          </article>
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/BMC Timemachine 01 ONE.jpg')%>"
-              alt="BMC Timemachine 01 ONE"
-              class="bikes__image"
-            />
-            <p class="bikes__name">BMC Timemachine 01 ONE</p>
-          </article>
-          <article class="bikes__card">
-            <img
-              src="<%=require('./vendor/images/Cervelo P-Series.jpg')%>"
-              alt="Cervelo P-Series"
-              class="bikes__image"
-            />
-            <p class="bikes__name">Cervelo P-Series</p>
-
-            <div class="three-dots-menu">
-              <div class="three-dots-menu__dot"></div>
-              <div class="three-dots-menu__dot"></div>
-              <div
-                class="three-dots-menu__dot three-dots-menu__dot_active"
-              ></div>
-            </div>
-          </article>
-
-          <div class="three-dots-menu">
-            <div class="three-dots-menu__dot"></div>
-            <div class="three-dots-menu__dot"></div>
-            <div class="three-dots-menu__dot three-dots-menu__dot_active"></div>
-          </div>
+        <div class="three-dots-menu">
+          <div class="three-dots-menu__dot three-dots-menu__dot_left"></div>
+          <div class="three-dots-menu__dot three-dots-menu__dot_middle"></div>
+          <div
+            class="three-dots-menu__dot three-dots-menu__dot_right three-dots-menu__dot_active"
+          ></div>
         </div>
       </section>
 
