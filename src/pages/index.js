@@ -363,7 +363,7 @@ linksToGravel.forEach(function (elem) {
 linksToTt.forEach(function (elem) {
   elem.addEventListener("click", function () {
     kebabRightActive();
-    console.log("link to TT triggered");
+
     bikesTt.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
@@ -375,19 +375,62 @@ linksToTt.forEach(function (elem) {
 // active kebab menu
 
 function kebabLeftActive() {
-  kebabLeft.classList.add(".three-dots-menu__dot_active");
-  kebabMiddle.classList.remove(".three-dots-menu__dot_active");
-  kebabRight.classList.remove(".three-dots-menu__dot_active");
+  console.log("left active");
+  kebabLeft.classList.add("three-dots-menu__dot_active");
+  kebabMiddle.classList.remove("three-dots-menu__dot_active");
+  kebabRight.classList.remove("three-dots-menu__dot_active");
 }
 
 function kebabMiddleActive() {
-  kebabLeft.classList.remove(".three-dots-menu__dot_active");
-  kebabMiddle.classList.add(".three-dots-menu__dot_active");
-  kebabRight.classList.remove(".three-dots-menu__dot_active");
+  console.log("middle active");
+  kebabLeft.classList.remove("three-dots-menu__dot_active");
+  kebabMiddle.classList.add("three-dots-menu__dot_active");
+  kebabRight.classList.remove("three-dots-menu__dot_active");
 }
 
 function kebabRightActive() {
-  kebabLeft.classList.remove(".three-dots-menu__dot_active");
-  kebabMiddle.classList.remove(".three-dots-menu__dot_active");
-  kebabRight.classList.add(".three-dots-menu__dot_active");
+  console.log("right active");
+  kebabLeft.classList.remove("three-dots-menu__dot_active");
+  kebabMiddle.classList.remove("three-dots-menu__dot_active");
+  kebabRight.classList.add("three-dots-menu__dot_active");
 }
+
+const highwayIntersection = document.getElementById(
+  "intersectionTriggerHighway"
+);
+const gravelIntersection = document.getElementById("intersectionTriggerGravel");
+const ttIntersection = document.getElementById("intersectionTriggerTT");
+
+let observerHighway = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === true) {
+      console.log("highway true");
+      kebabLeftActive();
+    }
+  },
+  { threshold: [1] }
+);
+
+let observerGravel = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === true) {
+      console.log("gravel true");
+      kebabMiddleActive();
+    }
+  },
+  { threshold: [1] }
+);
+
+let observerTt = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === true) {
+      console.log("tt true");
+      kebabRightActive();
+    }
+  },
+  { threshold: [1] }
+);
+
+observerHighway.observe(highwayIntersection);
+observerGravel.observe(gravelIntersection);
+observerTt.observe(ttIntersection);
