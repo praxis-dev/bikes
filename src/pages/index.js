@@ -26,24 +26,27 @@ breakPoint.addEventListener("change", () => mobileTitleReposition());
 // hideHighwayPicForMobile
 
 const highwayIllustrations = document.querySelectorAll(".highway__image");
+const highwayRightPics = document.querySelectorAll(
+  ".highway__images-container-right"
+);
+
+console.log(highwayRightPics);
 
 function hideHighwayPicForMobile() {
   if (breakPoint.matches) {
-    for (let i = 1; i < highwayIllustrations.length; i += 2) {
-      highwayIllustrations[i].style.display = "none";
-    }
+    console.log("hidden");
+    highwayRightPics.forEach((container) => {
+      container.style.display = "none";
+    });
   } else {
-    for (let i = 1; i < highwayIllustrations.length; i += 2) {
-      highwayIllustrations[i].style.display = "block";
-    }
+    console.log("visible");
+    highwayRightPics.forEach((container) => {
+      container.style.display = "block";
+    });
   }
 }
 
-hideHighwayPicForMobile();
-
 breakPoint.addEventListener("change", () => hideHighwayPicForMobile());
-
-// repositionHighwaySelectorForMobile
 
 const highwaySection = document.querySelector(".highway");
 const highwaySections = document.querySelectorAll(".highway");
@@ -61,10 +64,6 @@ const highwayArrowRightContainer = document.querySelector(
   ".highway__slider-button-right"
 );
 
-//highwaySwapForMobile
-
-console.log(highwaySlides);
-
 function restructureSlides(highwaySlides) {
   if (breakPoint.matches) {
     highwaySlides.forEach((slide) => {
@@ -75,9 +74,10 @@ function restructureSlides(highwaySlides) {
       const highwayTextContainer = slide.querySelector(
         ".highway__text-container"
       );
-      highwayImagesLeftContainer.parentNode.insertBefore(
+      const highwayText = slide.querySelector(".highway__text");
+      highwayText.parentNode.insertBefore(
         highwayImagesLeftContainer,
-        highwayTextContainer
+        highwayText
       );
     });
   } else {
@@ -89,10 +89,8 @@ function restructureSlides(highwaySlides) {
       const highwayTextContainer = slide.querySelector(
         ".highway__text-container"
       );
-      highwayTextContainer.parentNode.insertBefore(
-        highwayTextContainer,
-        highwayImagesLeftContainer
-      );
+      const highwayText = slide.querySelector(".highway__text");
+      highwayTextContainer.after(highwayImagesLeftContainer);
     });
   }
 }
