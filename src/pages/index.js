@@ -106,8 +106,8 @@ const highwayTextContainer = document.querySelector(".highway__text-container");
 function repositionHighwaySelectorForMobile() {
   if (breakPoint.matches) {
     highwayPicSelector.style.position = "absolute";
-    highwayPicSelector.style.top = "15%";
-    highwayPicSelector.style.right = "10%";
+    highwayPicSelector.style.top = "17%";
+    highwayPicSelector.style.right = "5%";
     highwayArrowLeftContainer.style.width = "24px";
     highwayArrowLeftContainer.style.height = "24px";
     highwayArrowRightContainer.style.width = "24px";

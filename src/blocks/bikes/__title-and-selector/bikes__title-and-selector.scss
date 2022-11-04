@@ -6,6 +6,7 @@
   justify-content: space-between;
   margin-bottom: 69px;
   grid-column: 1/4;
+  margin: 0 8.3% 5%;
 }
 
 @media screen and (max-width: 1439px) {
@@ -23,6 +24,6 @@
 @media screen and (max-width: 940px) {
   .bikes__title-and-selector {
     grid-column: 1;
-    margin-bottom: 32px;
+    margin: 9.5% 4.7% 11.5%;
   }
 }

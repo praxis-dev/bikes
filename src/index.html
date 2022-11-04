@@ -247,68 +247,61 @@
       <!-- bikes -->
 
       <section class="bikes">
+        <svg
+          class="bikes__mobile-line"
+          width="284"
+          height="1"
+          viewBox="0 0 284 1"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
+        </svg>
+        <div class="bikes__title-and-selector">
+          <h2 class="bikes__title">Велосипеды</h2>
+          <nav class="bikes__types-selector">
+            <ul class="bikes__types-list">
+              <li class="bikes__types-list-bullet">
+                <a
+                  href="#/"
+                  class="bikes__types-link bikes__types-link_highway bikes__types-link_selected"
+                  >Шоссе</a
+                >
+              </li>
+              <li class="bikes__types-list-bullet">
+                <a href="#/" class="bikes__types-link bikes__types-link_gravel"
+                  >Грэвел</a
+                >
+              </li>
+              <li class="bikes__types-list-bullet">
+                <a href="#/" class="bikes__types-link bikes__types-link_tt"
+                  >ТТ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="bikes__mobile-selector-wrapper">
+          <label for="bikes__mobile-selector"></label
+          ><select
+            class="bikes__mobile-selector"
+            name="bikes__mobile-selector"
+            id="bikes__mobile-selector"
+          >
+            <option class="mobile-selector-highway" value="highway" selected>
+              Шоссе
+            </option>
+            <option class="mobile-selector-gravel" value="Gravel">
+              Грэвэл
+            </option>
+            <option class="mobile-selector-TT" value="TT">ТТ</option>
+          </select>
+        </div>
         <div class="bikes__slides-container">
           <!-- highway -->
 
           <div class="bikes__slide" id="highway">
-            <svg
-              class="highway__mobile-line"
-              width="284"
-              height="1"
-              viewBox="0 0 284 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
-            </svg>
-            <div class="bikes__title-and-selector">
-              <h2 class="bikes__title">Велосипеды</h2>
-              <nav class="bikes__types-selector">
-                <ul class="bikes__types-list">
-                  <li class="bikes__types-list-bullet">
-                    <a
-                      href="#/"
-                      class="bikes__types-link bikes__types-link_highway bikes__types-link_selected"
-                      >Шоссе</a
-                    >
-                  </li>
-                  <li class="bikes__types-list-bullet">
-                    <a
-                      href="#/"
-                      class="bikes__types-link bikes__types-link_gravel"
-                      >Грэвел</a
-                    >
-                  </li>
-                  <li class="bikes__types-list-bullet">
-                    <a href="#/" class="bikes__types-link bikes__types-link_tt"
-                      >ТТ</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="bikes__mobile-selector-wrapper">
-              <label for="bikes__mobile-selector"></label
-              ><select
-                class="bikes__mobile-selector"
-                name="bikes__mobile-selector"
-                id="bikes__mobile-selector"
-              >
-                <option
-                  class="mobile-selector-highway"
-                  value="highway"
-                  selected
-                >
-                  Шоссе
-                </option>
-                <option class="mobile-selector-gravel" value="Gravel">
-                  Грэвэл
-                </option>
-                <option class="mobile-selector-TT" value="TT">ТТ</option>
-              </select>
-            </div>
-
             <article class="bikes__card">
               <img
                 src="<%=require('./vendor/images/Cervelo-Caledonia.jpg')%>"
@@ -339,60 +332,6 @@
           <!-- gravel -->
 
           <div class="bikes__slide" id="gravel">
-            <svg
-              class="highway__mobile-line"
-              width="284"
-              height="1"
-              viewBox="0 0 284 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
-            </svg>
-            <div class="bikes__title-and-selector">
-              <h2 class="bikes__title">Велосипеды</h2>
-              <nav class="bikes__types-selector">
-                <ul class="bikes__types-list">
-                  <li class="bikes__types-list-bullet">
-                    <a
-                      href="#/"
-                      class="bikes__types-link bikes__types-link_highway"
-                      >Шоссе</a
-                    >
-                  </li>
-                  <li class="bikes__types-list-bullet">
-                    <a
-                      href="#/"
-                      class="bikes__types-link bikes__types-link_gravel bikes__types-link_selected"
-                      >Грэвел</a
-                    >
-                  </li>
-                  <li class="bikes__types-list-bullet">
-                    <a href="#/" class="bikes__types-link bikes__types-link_tt"
-                      >ТТ</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="bikes__mobile-selector-wrapper">
-              <label for="bikes__mobile-selector"></label
-              ><select
-                class="bikes__mobile-selector"
-                name="bikes__mobile-selector"
-                id="bikes__mobile-selector"
-              >
-                <option class="mobile-selector-highway" value="highway">
-                  Шоссе
-                </option>
-                <option class="mobile-selector-gravel" value="Gravel" selected>
-                  Грэвэл
-                </option>
-                <option class="mobile-selector-TT" value="TT">ТТ</option>
-              </select>
-            </div>
-
             <article class="bikes__card">
               <img
                 src="<%=require('./vendor/images/Cervelo Aspero GRX 810.jpg')%>"
@@ -423,64 +362,6 @@
           <!-- TT -->
 
           <div class="bikes__slide" id="TT">
-            <svg
-              class="highway__mobile-line"
-              width="284"
-              height="1"
-              viewBox="0 0 284 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line y1="0.5" x2="284" y2="0.5" stroke="#E3E3E3" />
-            </svg>
-            <div class="bikes__title-and-selector">
-              <h2 class="bikes__title">Велосипеды</h2>
-              <nav class="bikes__types-selector">
-                <ul class="bikes__types-list">
-                  <li class="bikes__types-list-bullet">
-                    <a
-                      href="#/"
-                      class="bikes__types-link bikes__types-link_highway"
-                      >Шоссе</a
-                    >
-                  </li>
-                  <li class="bikes__types-list-bullet">
-                    <a
-                      href="#/"
-                      class="bikes__types-link bikes__types-link_gravel"
-                      >Грэвел</a
-                    >
-                  </li>
-                  <li class="bikes__types-list-bullet">
-                    <a
-                      href="#/"
-                      class="bikes__types-link bikes__types-link_tt bikes__types-link_selected"
-                      >ТТ</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="bikes__mobile-selector-wrapper">
-              <label for="bikes__mobile-selector"></label
-              ><select
-                class="bikes__mobile-selector"
-                name="bikes__mobile-selector"
-                id="bikes__mobile-selector"
-              >
-                <option class="mobile-selector-highway" value="highway">
-                  Шоссе
-                </option>
-                <option class="mobile-selector-gravel" value="Gravel">
-                  Грэвэл
-                </option>
-                <option class="mobile-selector-TT" value="TT" selected>
-                  ТТ
-                </option>
-              </select>
-            </div>
-
             <article class="bikes__card">
               <img
                 src="<%=require('./vendor/images/Specialized S-Works Shiv.jpg')%>"

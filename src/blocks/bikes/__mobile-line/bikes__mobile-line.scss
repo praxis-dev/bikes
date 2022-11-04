@@ -1,0 +1,6 @@
+@use "mixins" as *;
+
+.bikes__mobile-line {
+  @include hiddenForDesktop;
+  margin: 35px 4.5% 0;
+}

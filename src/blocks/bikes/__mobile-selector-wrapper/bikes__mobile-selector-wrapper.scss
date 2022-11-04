@@ -1,8 +1,10 @@
 .bikes__mobile-selector-wrapper {
   display: inline-flex;
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 0;
   width: max-content;
+  margin-left: 4%;
+  margin-top: 0;
 }
 .bikes__mobile-selector-wrapper::after {
   content: url(/src/vendor/images/mobile-selector-arrow.svg);
