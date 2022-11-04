@@ -2,6 +2,9 @@ import "./styles.scss";
 
 let breakPoint = window.matchMedia("(max-width: 710px)");
 let breakPointForBikes = window.matchMedia("(max-width: 940px)");
+let breakPointForBikeNamesInBikeSection = window.matchMedia(
+  "(max-width: 1439px)"
+);
 
 // primaryTitleReposition
 
@@ -180,6 +183,12 @@ const toggleMobile = document.querySelector(".toggle-mobile");
 const allElements = document.getElementsByTagName("*");
 const highwayArrowLeft = document.querySelector(".highway__arrow-left");
 const highwayArrowRight = document.querySelector(".highway__arrow-right");
+const highwaySmallArrowLeft = document.querySelector(
+  ".highway__small-arrow-left"
+);
+const highwaySmallArrowRight = document.querySelector(
+  ".highway__small-arrow-right"
+);
 const primaryBikePicContainer = document.querySelector(
   ".primary__bike-picture-container"
 );
@@ -203,14 +212,13 @@ function applyDarkTheme() {
   highwayArrowLeft.style.backgroundColor = "rgba(67, 67, 67, 1)";
   highwayArrowRightContainer.style.backgroundColor = "rgba(67, 67, 67, 1)";
   highwayArrowRight.style.backgroundColor = "rgba(67, 67, 67, 1)";
+  highwaySmallArrowLeft.style.backgroundColor = "";
+  highwaySmallArrowRight.style.backgroundColor = "";
   primaryBike.style.backgroundColor = "";
   bikesImage.forEach(
     (element) => (element.style.backgroundColor = "rgba(244, 244, 244, 1)")
   );
-  bikesNames.forEach((element) => {
-    element.style.backgroundColor = "rgba(244, 244, 244, 1)";
-    element.style.color = "black";
-  });
+  toggleBikeNamesBackground();
   highwayRectangle.forEach((element) => (element.style.backgroundColor = ""));
   terrainType.forEach((element) => (element.style.backgroundColor = ""));
   sunIcon.style.color = "rgba(67, 67, 67, 1)";
@@ -236,6 +244,25 @@ function applyLightTheme() {
 }
 
 applyLightTheme();
+
+function toggleBikeNamesBackground() {
+  if (breakPointForBikeNamesInBikeSection.matches) {
+    bikesNames.forEach((element) => {
+      console.log("match");
+      element.style.backgroundColor = "rgba(244, 244, 244, 1)";
+      element.style.color = "black";
+    });
+  } else {
+    bikesNames.forEach((element) => {
+      element.style.backgroundColor = "rgba(51, 51, 51, 1)";
+      element.style.color = "white";
+    });
+  }
+}
+
+window.addEventListener("resize", () => {
+  toggleBikeNamesBackground();
+});
 
 toggle.addEventListener("change", function () {
   theme === "light" ? applyDarkTheme() : applyLightTheme();
