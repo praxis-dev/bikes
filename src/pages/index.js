@@ -336,15 +336,35 @@ const bikesHighway = document.getElementById("highway");
 const bikesGravel = document.getElementById("gravel");
 const bikesTt = document.getElementById("TT");
 
+function scrollToHighway() {
+  bikesHighway.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
+}
+
+function scrollToGravel() {
+  bikesGravel.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
+}
+
+function scrollToTT() {
+  bikesTt.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
+}
+
 linksToHighway.forEach(function (elem) {
   console.log("link to gravel triggered");
   kebabLeftActive();
   elem.addEventListener("click", function () {
-    bikesHighway.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
+    scrollToHighway();
   });
 });
 
@@ -352,23 +372,14 @@ linksToGravel.forEach(function (elem) {
   elem.addEventListener("click", function () {
     kebabMiddleActive();
     console.log("link to gravel triggered");
-    bikesGravel.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
+    scrollToGravel();
   });
 });
 
 linksToTt.forEach(function (elem) {
   elem.addEventListener("click", function () {
     kebabRightActive();
-
-    bikesTt.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
+    scrollToTT();
   });
 });
 
@@ -434,3 +445,26 @@ let observerTt = new IntersectionObserver(
 observerHighway.observe(highwayIntersection);
 observerGravel.observe(gravelIntersection);
 observerTt.observe(ttIntersection);
+
+const bikesMobileSelector = document.querySelectorAll(
+  ".bikes__mobile-selector-wrapper"
+);
+
+bikesMobileSelector.forEach(function (elem) {
+  elem.addEventListener(
+    "change",
+    function (event) {
+      if (event.target.value === "highway") {
+        kebabLeftActive();
+        scrollToHighway();
+      } else if (event.target.value === "Gravel") {
+        kebabMiddleActive();
+        scrollToGravel();
+      } else if (event.target.value === "TT") {
+        kebabRightActive();
+        scrollToTT();
+      }
+    },
+    false
+  );
+});
