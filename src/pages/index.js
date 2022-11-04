@@ -183,6 +183,7 @@ const highwayArrowRight = document.querySelector(".highway__arrow-right");
 const primaryBikePicContainer = document.querySelector(
   ".primary__bike-picture-container"
 );
+const primaryBike = document.querySelector(".primary__bike-picture");
 const bikesImage = document.querySelectorAll(".bikes__image");
 const highwayRectangle = document.querySelectorAll(".highway__rectangle");
 const terrainType = document.querySelectorAll(".highway__terrain-type");
@@ -190,6 +191,7 @@ const sunIcon = document.querySelector(".toggle__sun-icon");
 const moonIcon = document.querySelector(".toggle__moon-icon");
 const primaryDetailsButton = document.querySelector(".primary__details-button");
 const toggleFill = document.querySelector(".toggle__fill");
+const bikesNames = document.querySelectorAll(".bikes__name");
 let theme = "light";
 
 function applyDarkTheme() {
@@ -201,14 +203,16 @@ function applyDarkTheme() {
   highwayArrowLeft.style.backgroundColor = "rgba(67, 67, 67, 1)";
   highwayArrowRightContainer.style.backgroundColor = "rgba(67, 67, 67, 1)";
   highwayArrowRight.style.backgroundColor = "rgba(67, 67, 67, 1)";
-  primaryBikePicContainer.style.backgroundColor = "rgba(244, 244, 244, 1)";
+  primaryBike.style.backgroundColor = "";
   bikesImage.forEach(
     (element) => (element.style.backgroundColor = "rgba(244, 244, 244, 1)")
   );
-  // highwayRectangle.style.backgroundColor = "";
+  bikesNames.forEach((element) => {
+    element.style.backgroundColor = "rgba(244, 244, 244, 1)";
+    element.style.color = "black";
+  });
   highwayRectangle.forEach((element) => (element.style.backgroundColor = ""));
   terrainType.forEach((element) => (element.style.backgroundColor = ""));
-  // terrainType.style.backgroundColor = "";
   sunIcon.style.color = "rgba(67, 67, 67, 1)";
   moonIcon.style.color = "rgba(67, 67, 67, 1)";
   toggleFill.style.backgroundColor = "rgba(84, 84, 84, 1)";
